@@ -140,8 +140,7 @@ class PGoApi:
         return (self._position_lat, self._position_lng, self._position_alt)
 
     def set_position(self, lat, lng, alt=None):
-        self.log.debug('Set Position - Lat: %s Long: %s Alt: %s', lat, lng,
-                       alt)
+        self.log.debug('Set Position - Lat: %s Long: %s Alt: %s', lat, lng, alt)
 
         self._position_lat = lat
         self._position_lng = lng
@@ -362,8 +361,7 @@ class PGoApiRequest:
         return (self._position_lat, self._position_lng, self._position_alt)
 
     def set_position(self, lat, lng, alt=None):
-        self.log.debug('Set Position - Lat: %s Long: %s Alt: %s', lat, lng,
-                       alt)
+        self.log.debug('Set Position - Lat: %s Long: %s Alt: %s', lat, lng, alt)
 
         self._position_lat = lat
         self._position_lng = lng
@@ -381,8 +379,7 @@ class PGoApiRequest:
             name = func.upper()
             if kwargs:
                 self._req_method_list.append((RequestType.Value(name), kwargs))
-                self.log.info("Adding '%s' to RPC request including arguments",
-                              name)
+                self.log.info("Adding '%s' to RPC request including arguments", name)
                 self.log.debug("Arguments of '%s': \n\r%s", name, kwargs)
             else:
                 self._req_method_list.append((RequestType.Value(name), None))
@@ -399,8 +396,7 @@ class PGoApiRequest:
             if kwargs:
                 self._req_platform_list.append(
                     (PlatformRequestType.Value(name), kwargs))
-                self.log.info("Adding '%s' to RPC request including arguments",
-                              name)
+                self.log.info("Adding '%s' to RPC request including arguments", name)
                 self.log.debug("Arguments of '%s': \n\r%s", name, kwargs)
             else:
                 self._req_platform_list.append(
