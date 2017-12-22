@@ -54,7 +54,7 @@ class AuthPtc(Auth):
         self._password = password
         self.timeout = timeout or 10
         self.locale = locale or 'en_US'
-        self.user_agent = user_agent or 'pokemongo/0 CFNetwork/811.5.4 Darwin/16.7.0'
+        self.user_agent = user_agent or 'pokemongo/0 CFNetwork/893.14.2 Darwin/17.3.0'
 
         self._session = requests.session()
         self._session.headers = {
@@ -63,7 +63,7 @@ class AuthPtc(Auth):
             'Connection': 'keep-alive',
             'User-Agent': self.user_agent,
             'Accept-Language': self.locale.lower().replace('_', '-'),
-            'Accept-Encoding': 'gzip, deflate',
+            'Accept-Encoding': 'br, gzip, deflate',
             'X-Unity-Version': '2017.1.2f1'
         }
 
