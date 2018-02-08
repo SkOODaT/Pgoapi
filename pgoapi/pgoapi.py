@@ -100,19 +100,11 @@ class PGoApi:
 
     @staticmethod
     def get_api_version():
-        return 8900
+        return 9100
 
-    def set_authentication(self,
-                           provider=None,
-                           oauth2_refresh_token=None,
-                           username=None,
-                           password=None,
-                           proxy_config=None,
-                           user_agent=None,
-                           timeout=None,
-                           locale=None):
+    def set_authentication(self, provider=None, oauth2_refresh_token=None, username=None, password=None, proxy_config=None, user_agent=None, timeout=None):
         if provider == 'ptc':
-            self._auth_provider = AuthPtc(user_agent=user_agent, timeout=timeout, locale=locale)
+            self._auth_provider = AuthPtc(user_agent=user_agent, timeout=timeout)
         elif provider == 'google':
             self._auth_provider = AuthGoogle()
         elif provider is None:
