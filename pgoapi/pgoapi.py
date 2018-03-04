@@ -199,7 +199,7 @@ class PGoApi:
         request.get_player(player_locale={
             'country': 'US',
             'language': 'en',
-            'timezone': 'America/Chicago'
+            'timezone': 'America/Toronto'
         })
         response = request.call()
 
