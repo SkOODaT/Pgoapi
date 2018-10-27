@@ -13,6 +13,7 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
+from pogoprotos.enums import form_pb2 as pogoprotos_dot_enums_dot_form__pb2
 from pogoprotos.enums import pokemon_id_pb2 as pogoprotos_dot_enums_dot_pokemon__id__pb2
 from pogoprotos.inventory.item import item_id_pb2 as pogoprotos_dot_inventory_dot_item_dot_item__id__pb2
 
@@ -21,10 +22,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/settings/master/pokemon/evolution_branch.proto',
   package='pogoprotos.settings.master.pokemon',
   syntax='proto3',
-  serialized_pb=_b('\n9pogoprotos/settings/master/pokemon/evolution_branch.proto\x12\"pogoprotos.settings.master.pokemon\x1a!pogoprotos/enums/pokemon_id.proto\x1a\'pogoprotos/inventory/item/item_id.proto\"\xc3\x01\n\x0f\x45volutionBranch\x12.\n\tevolution\x18\x01 \x01(\x0e\x32\x1b.pogoprotos.enums.PokemonId\x12\x45\n\x1a\x65volution_item_requirement\x18\x02 \x01(\x0e\x32!.pogoprotos.inventory.item.ItemId\x12\x12\n\ncandy_cost\x18\x03 \x01(\x05\x12%\n\x1dkm_buddy_distance_requirement\x18\x04 \x01(\x02\x62\x06proto3')
+  serialized_pb=_b('\n9pogoprotos/settings/master/pokemon/evolution_branch.proto\x12\"pogoprotos.settings.master.pokemon\x1a\x1bpogoprotos/enums/form.proto\x1a!pogoprotos/enums/pokemon_id.proto\x1a\'pogoprotos/inventory/item/item_id.proto\"\xe9\x01\n\x0f\x45volutionBranch\x12.\n\tevolution\x18\x01 \x01(\x0e\x32\x1b.pogoprotos.enums.PokemonId\x12\x45\n\x1a\x65volution_item_requirement\x18\x02 \x01(\x0e\x32!.pogoprotos.inventory.item.ItemId\x12\x12\n\ncandy_cost\x18\x03 \x01(\x05\x12%\n\x1dkm_buddy_distance_requirement\x18\x04 \x01(\x02\x12$\n\x04\x66orm\x18\x05 \x01(\x0e\x32\x16.pogoprotos.enums.Formb\x06proto3')
   ,
-  dependencies=[pogoprotos_dot_enums_dot_pokemon__id__pb2.DESCRIPTOR,pogoprotos_dot_inventory_dot_item_dot_item__id__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+  dependencies=[pogoprotos_dot_enums_dot_form__pb2.DESCRIPTOR,pogoprotos_dot_enums_dot_pokemon__id__pb2.DESCRIPTOR,pogoprotos_dot_inventory_dot_item_dot_item__id__pb2.DESCRIPTOR,])
 
 
 
@@ -64,6 +64,13 @@ _EVOLUTIONBRANCH = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='form', full_name='pogoprotos.settings.master.pokemon.EvolutionBranch.form', index=4,
+      number=5, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -76,13 +83,15 @@ _EVOLUTIONBRANCH = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=174,
-  serialized_end=369,
+  serialized_start=203,
+  serialized_end=436,
 )
 
 _EVOLUTIONBRANCH.fields_by_name['evolution'].enum_type = pogoprotos_dot_enums_dot_pokemon__id__pb2._POKEMONID
 _EVOLUTIONBRANCH.fields_by_name['evolution_item_requirement'].enum_type = pogoprotos_dot_inventory_dot_item_dot_item__id__pb2._ITEMID
+_EVOLUTIONBRANCH.fields_by_name['form'].enum_type = pogoprotos_dot_enums_dot_form__pb2._FORM
 DESCRIPTOR.message_types_by_name['EvolutionBranch'] = _EVOLUTIONBRANCH
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 EvolutionBranch = _reflection.GeneratedProtocolMessageType('EvolutionBranch', (_message.Message,), dict(
   DESCRIPTOR = _EVOLUTIONBRANCH,

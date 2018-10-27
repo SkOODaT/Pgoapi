@@ -26,16 +26,25 @@ from pogoprotos.settings import passcode_settings_pb2 as pogoprotos_dot_settings
 from pogoprotos.settings import sfida_settings_pb2 as pogoprotos_dot_settings_dot_sfida__settings__pb2
 from pogoprotos.settings import translation_settings_pb2 as pogoprotos_dot_settings_dot_translation__settings__pb2
 from pogoprotos.settings import client_performance_settings_pb2 as pogoprotos_dot_settings_dot_client__performance__settings__pb2
+from pogoprotos.settings import news_global_settings_pb2 as pogoprotos_dot_settings_dot_news__global__settings__pb2
+from pogoprotos.settings import telemetry_global_settings_pb2 as pogoprotos_dot_settings_dot_telemetry__global__settings__pb2
+from pogoprotos.settings import login_settings_pb2 as pogoprotos_dot_settings_dot_login__settings__pb2
+from pogoprotos.settings import quest_global_settings_pb2 as pogoprotos_dot_settings_dot_quest__global__settings__pb2
+from pogoprotos.settings import social_client_settings_pb2 as pogoprotos_dot_settings_dot_social__client__settings__pb2
+from pogoprotos.settings import trading_global_settings_pb2 as pogoprotos_dot_settings_dot_trading__global__settings__pb2
+from pogoprotos.settings import upsight_logging_settings_pb2 as pogoprotos_dot_settings_dot_upsight__logging__settings__pb2
+from pogoprotos.settings import background_mode_global_settings_pb2 as pogoprotos_dot_settings_dot_background__mode__global__settings__pb2
+from pogoprotos.settings import probe_settings_pb2 as pogoprotos_dot_settings_dot_probe__settings__pb2
+from pogoprotos.enums import pokemon_id_pb2 as pogoprotos_dot_enums_dot_pokemon__id__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/settings/global_settings.proto',
   package='pogoprotos.settings',
   syntax='proto3',
-  serialized_pb=_b('\n)pogoprotos/settings/global_settings.proto\x12\x13pogoprotos.settings\x1a(pogoprotos/settings/event_settings.proto\x1a+pogoprotos/settings/festival_settings.proto\x1a\'pogoprotos/settings/fort_settings.proto\x1a&pogoprotos/settings/gps_settings.proto\x1a,pogoprotos/settings/inventory_settings.proto\x1a(pogoprotos/settings/level_settings.proto\x1a&pogoprotos/settings/map_settings.proto\x1a\'pogoprotos/settings/news_settings.proto\x1a/pogoprotos/settings/notification_settings.proto\x1a+pogoprotos/settings/passcode_settings.proto\x1a(pogoprotos/settings/sfida_settings.proto\x1a.pogoprotos/settings/translation_settings.proto\x1a\x35pogoprotos/settings/client_performance_settings.proto\"\xa9\x07\n\x0eGlobalSettings\x12\x38\n\rfort_settings\x18\x02 \x01(\x0b\x32!.pogoprotos.settings.FortSettings\x12\x36\n\x0cmap_settings\x18\x03 \x01(\x0b\x32 .pogoprotos.settings.MapSettings\x12:\n\x0elevel_settings\x18\x04 \x01(\x0b\x32\".pogoprotos.settings.LevelSettings\x12\x42\n\x12inventory_settings\x18\x05 \x01(\x0b\x32&.pogoprotos.settings.InventorySettings\x12\x1e\n\x16minimum_client_version\x18\x06 \x01(\t\x12\x36\n\x0cgps_settings\x18\x07 \x01(\x0b\x32 .pogoprotos.settings.GpsSettings\x12@\n\x11\x66\x65stival_settings\x18\x08 \x01(\x0b\x32%.pogoprotos.settings.FestivalSettings\x12:\n\x0e\x65vent_settings\x18\t \x01(\x0b\x32\".pogoprotos.settings.EventSettings\x12\x19\n\x11max_pokemon_types\x18\n \x01(\x05\x12:\n\x0esfida_settings\x18\x0b \x01(\x0b\x32\".pogoprotos.settings.SfidaSettings\x12\x38\n\rnews_settings\x18\x0c \x01(\x0b\x32!.pogoprotos.settings.NewsSettings\x12\x46\n\x14translation_settings\x18\r \x01(\x0b\x32(.pogoprotos.settings.TranslationSettings\x12@\n\x11passcode_settings\x18\x0e \x01(\x0b\x32%.pogoprotos.settings.PasscodeSettings\x12H\n\x15notification_settings\x18\x0f \x01(\x0b\x32).pogoprotos.settings.NotificationSettings\x12\x1c\n\x14\x63lient_app_blacklist\x18\x10 \x03(\t\x12L\n\x14\x63lient_perf_settings\x18\x11 \x01(\x0b\x32..pogoprotos.settings.ClientPerformanceSettingsb\x06proto3')
+  serialized_pb=_b('\n)pogoprotos/settings/global_settings.proto\x12\x13pogoprotos.settings\x1a(pogoprotos/settings/event_settings.proto\x1a+pogoprotos/settings/festival_settings.proto\x1a\'pogoprotos/settings/fort_settings.proto\x1a&pogoprotos/settings/gps_settings.proto\x1a,pogoprotos/settings/inventory_settings.proto\x1a(pogoprotos/settings/level_settings.proto\x1a&pogoprotos/settings/map_settings.proto\x1a\'pogoprotos/settings/news_settings.proto\x1a/pogoprotos/settings/notification_settings.proto\x1a+pogoprotos/settings/passcode_settings.proto\x1a(pogoprotos/settings/sfida_settings.proto\x1a.pogoprotos/settings/translation_settings.proto\x1a\x35pogoprotos/settings/client_performance_settings.proto\x1a.pogoprotos/settings/news_global_settings.proto\x1a\x33pogoprotos/settings/telemetry_global_settings.proto\x1a(pogoprotos/settings/login_settings.proto\x1a/pogoprotos/settings/quest_global_settings.proto\x1a\x30pogoprotos/settings/social_client_settings.proto\x1a\x31pogoprotos/settings/trading_global_settings.proto\x1a\x32pogoprotos/settings/upsight_logging_settings.proto\x1a\x39pogoprotos/settings/background_mode_global_settings.proto\x1a(pogoprotos/settings/probe_settings.proto\x1a!pogoprotos/enums/pokemon_id.proto\"\xfa\x0c\n\x0eGlobalSettings\x12\x38\n\rfort_settings\x18\x02 \x01(\x0b\x32!.pogoprotos.settings.FortSettings\x12\x36\n\x0cmap_settings\x18\x03 \x01(\x0b\x32 .pogoprotos.settings.MapSettings\x12:\n\x0elevel_settings\x18\x04 \x01(\x0b\x32\".pogoprotos.settings.LevelSettings\x12\x42\n\x12inventory_settings\x18\x05 \x01(\x0b\x32&.pogoprotos.settings.InventorySettings\x12\x1e\n\x16minimum_client_version\x18\x06 \x01(\t\x12\x36\n\x0cgps_settings\x18\x07 \x01(\x0b\x32 .pogoprotos.settings.GpsSettings\x12@\n\x11\x66\x65stival_settings\x18\x08 \x01(\x0b\x32%.pogoprotos.settings.FestivalSettings\x12:\n\x0e\x65vent_settings\x18\t \x01(\x0b\x32\".pogoprotos.settings.EventSettings\x12\x19\n\x11max_pokemon_types\x18\n \x01(\x05\x12:\n\x0esfida_settings\x18\x0b \x01(\x0b\x32\".pogoprotos.settings.SfidaSettings\x12\x38\n\rnews_settings\x18\x0c \x01(\x0b\x32!.pogoprotos.settings.NewsSettings\x12\x46\n\x14translation_settings\x18\r \x01(\x0b\x32(.pogoprotos.settings.TranslationSettings\x12@\n\x11passcode_settings\x18\x0e \x01(\x0b\x32%.pogoprotos.settings.PasscodeSettings\x12H\n\x15notification_settings\x18\x0f \x01(\x0b\x32).pogoprotos.settings.NotificationSettings\x12\x1c\n\x14\x63lient_app_blacklist\x18\x10 \x03(\t\x12L\n\x14\x63lient_perf_settings\x18\x11 \x01(\x0b\x32..pogoprotos.settings.ClientPerformanceSettings\x12\x45\n\x14news_global_settings\x18\x12 \x01(\x0b\x32\'.pogoprotos.settings.NewsGlobalSettings\x12G\n\x15quest_global_settings\x18\x13 \x01(\x0b\x32(.pogoprotos.settings.QuestGlobalSettings\x12O\n\x19telemetry_global_settings\x18\x15 \x01(\x0b\x32,.pogoprotos.settings.TelemetryGlobalSettings\x12:\n\x0elogin_settings\x18\x16 \x01(\x0b\x32\".pogoprotos.settings.LoginSettings\x12\x42\n\x0fsocial_settings\x18\x17 \x01(\x0b\x32).pogoprotos.settings.SocialClientSettings\x12K\n\x17trading_global_settings\x18\x18 \x01(\x0b\x32*.pogoprotos.settings.TradingGlobalSettings\x12\x43\n\x1e\x61\x64\x64itional_allowed_pokemon_ids\x18\x19 \x03(\x0e\x32\x1b.pogoprotos.enums.PokemonId\x12M\n\x18upsight_logging_settings\x18\x1a \x01(\x0b\x32+.pogoprotos.settings.UpsightLoggingSettings\x12Q\n\x16\x62gmode_global_settings\x18\x1e \x01(\x0b\x32\x31.pogoprotos.settings.BackgroundModeGlobalSettings\x12:\n\x0eprobe_settings\x18\x1f \x01(\x0b\x32\".pogoprotos.settings.ProbeSettingsb\x06proto3')
   ,
-  dependencies=[pogoprotos_dot_settings_dot_event__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_festival__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_fort__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_gps__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_inventory__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_level__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_map__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_news__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_notification__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_passcode__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_sfida__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_translation__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_client__performance__settings__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+  dependencies=[pogoprotos_dot_settings_dot_event__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_festival__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_fort__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_gps__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_inventory__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_level__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_map__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_news__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_notification__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_passcode__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_sfida__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_translation__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_client__performance__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_news__global__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_telemetry__global__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_login__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_quest__global__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_social__client__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_trading__global__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_upsight__logging__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_background__mode__global__settings__pb2.DESCRIPTOR,pogoprotos_dot_settings_dot_probe__settings__pb2.DESCRIPTOR,pogoprotos_dot_enums_dot_pokemon__id__pb2.DESCRIPTOR,])
 
 
 
@@ -159,6 +168,76 @@ _GLOBALSETTINGS = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='news_global_settings', full_name='pogoprotos.settings.GlobalSettings.news_global_settings', index=16,
+      number=18, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='quest_global_settings', full_name='pogoprotos.settings.GlobalSettings.quest_global_settings', index=17,
+      number=19, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='telemetry_global_settings', full_name='pogoprotos.settings.GlobalSettings.telemetry_global_settings', index=18,
+      number=21, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='login_settings', full_name='pogoprotos.settings.GlobalSettings.login_settings', index=19,
+      number=22, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='social_settings', full_name='pogoprotos.settings.GlobalSettings.social_settings', index=20,
+      number=23, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='trading_global_settings', full_name='pogoprotos.settings.GlobalSettings.trading_global_settings', index=21,
+      number=24, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='additional_allowed_pokemon_ids', full_name='pogoprotos.settings.GlobalSettings.additional_allowed_pokemon_ids', index=22,
+      number=25, type=14, cpp_type=8, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='upsight_logging_settings', full_name='pogoprotos.settings.GlobalSettings.upsight_logging_settings', index=23,
+      number=26, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='bgmode_global_settings', full_name='pogoprotos.settings.GlobalSettings.bgmode_global_settings', index=24,
+      number=30, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='probe_settings', full_name='pogoprotos.settings.GlobalSettings.probe_settings', index=25,
+      number=31, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -171,8 +250,8 @@ _GLOBALSETTINGS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=643,
-  serialized_end=1580,
+  serialized_start=1124,
+  serialized_end=2782,
 )
 
 _GLOBALSETTINGS.fields_by_name['fort_settings'].message_type = pogoprotos_dot_settings_dot_fort__settings__pb2._FORTSETTINGS
@@ -188,7 +267,18 @@ _GLOBALSETTINGS.fields_by_name['translation_settings'].message_type = pogoprotos
 _GLOBALSETTINGS.fields_by_name['passcode_settings'].message_type = pogoprotos_dot_settings_dot_passcode__settings__pb2._PASSCODESETTINGS
 _GLOBALSETTINGS.fields_by_name['notification_settings'].message_type = pogoprotos_dot_settings_dot_notification__settings__pb2._NOTIFICATIONSETTINGS
 _GLOBALSETTINGS.fields_by_name['client_perf_settings'].message_type = pogoprotos_dot_settings_dot_client__performance__settings__pb2._CLIENTPERFORMANCESETTINGS
+_GLOBALSETTINGS.fields_by_name['news_global_settings'].message_type = pogoprotos_dot_settings_dot_news__global__settings__pb2._NEWSGLOBALSETTINGS
+_GLOBALSETTINGS.fields_by_name['quest_global_settings'].message_type = pogoprotos_dot_settings_dot_quest__global__settings__pb2._QUESTGLOBALSETTINGS
+_GLOBALSETTINGS.fields_by_name['telemetry_global_settings'].message_type = pogoprotos_dot_settings_dot_telemetry__global__settings__pb2._TELEMETRYGLOBALSETTINGS
+_GLOBALSETTINGS.fields_by_name['login_settings'].message_type = pogoprotos_dot_settings_dot_login__settings__pb2._LOGINSETTINGS
+_GLOBALSETTINGS.fields_by_name['social_settings'].message_type = pogoprotos_dot_settings_dot_social__client__settings__pb2._SOCIALCLIENTSETTINGS
+_GLOBALSETTINGS.fields_by_name['trading_global_settings'].message_type = pogoprotos_dot_settings_dot_trading__global__settings__pb2._TRADINGGLOBALSETTINGS
+_GLOBALSETTINGS.fields_by_name['additional_allowed_pokemon_ids'].enum_type = pogoprotos_dot_enums_dot_pokemon__id__pb2._POKEMONID
+_GLOBALSETTINGS.fields_by_name['upsight_logging_settings'].message_type = pogoprotos_dot_settings_dot_upsight__logging__settings__pb2._UPSIGHTLOGGINGSETTINGS
+_GLOBALSETTINGS.fields_by_name['bgmode_global_settings'].message_type = pogoprotos_dot_settings_dot_background__mode__global__settings__pb2._BACKGROUNDMODEGLOBALSETTINGS
+_GLOBALSETTINGS.fields_by_name['probe_settings'].message_type = pogoprotos_dot_settings_dot_probe__settings__pb2._PROBESETTINGS
 DESCRIPTOR.message_types_by_name['GlobalSettings'] = _GLOBALSETTINGS
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 GlobalSettings = _reflection.GeneratedProtocolMessageType('GlobalSettings', (_message.Message,), dict(
   DESCRIPTOR = _GLOBALSETTINGS,

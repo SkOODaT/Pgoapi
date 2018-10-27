@@ -20,9 +20,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/enums/badge_type.proto',
   package='pogoprotos.enums',
   syntax='proto3',
-  serialized_pb=_b('\n!pogoprotos/enums/badge_type.proto\x12\x10pogoprotos.enums*\xd2\n\n\tBadgeType\x12\x0f\n\x0b\x42\x41\x44GE_UNSET\x10\x00\x12\x13\n\x0f\x42\x41\x44GE_TRAVEL_KM\x10\x01\x12\x19\n\x15\x42\x41\x44GE_POKEDEX_ENTRIES\x10\x02\x12\x17\n\x13\x42\x41\x44GE_CAPTURE_TOTAL\x10\x03\x12\x17\n\x13\x42\x41\x44GE_DEFEATED_FORT\x10\x04\x12\x17\n\x13\x42\x41\x44GE_EVOLVED_TOTAL\x10\x05\x12\x17\n\x13\x42\x41\x44GE_HATCHED_TOTAL\x10\x06\x12\x1b\n\x17\x42\x41\x44GE_ENCOUNTERED_TOTAL\x10\x07\x12\x1b\n\x17\x42\x41\x44GE_POKESTOPS_VISITED\x10\x08\x12\x1a\n\x16\x42\x41\x44GE_UNIQUE_POKESTOPS\x10\t\x12\x19\n\x15\x42\x41\x44GE_POKEBALL_THROWN\x10\n\x12\x16\n\x12\x42\x41\x44GE_BIG_MAGIKARP\x10\x0b\x12\x18\n\x14\x42\x41\x44GE_DEPLOYED_TOTAL\x10\x0c\x12\x1b\n\x17\x42\x41\x44GE_BATTLE_ATTACK_WON\x10\r\x12\x1d\n\x19\x42\x41\x44GE_BATTLE_TRAINING_WON\x10\x0e\x12\x1b\n\x17\x42\x41\x44GE_BATTLE_DEFEND_WON\x10\x0f\x12\x19\n\x15\x42\x41\x44GE_PRESTIGE_RAISED\x10\x10\x12\x1a\n\x16\x42\x41\x44GE_PRESTIGE_DROPPED\x10\x11\x12\x15\n\x11\x42\x41\x44GE_TYPE_NORMAL\x10\x12\x12\x17\n\x13\x42\x41\x44GE_TYPE_FIGHTING\x10\x13\x12\x15\n\x11\x42\x41\x44GE_TYPE_FLYING\x10\x14\x12\x15\n\x11\x42\x41\x44GE_TYPE_POISON\x10\x15\x12\x15\n\x11\x42\x41\x44GE_TYPE_GROUND\x10\x16\x12\x13\n\x0f\x42\x41\x44GE_TYPE_ROCK\x10\x17\x12\x12\n\x0e\x42\x41\x44GE_TYPE_BUG\x10\x18\x12\x14\n\x10\x42\x41\x44GE_TYPE_GHOST\x10\x19\x12\x14\n\x10\x42\x41\x44GE_TYPE_STEEL\x10\x1a\x12\x13\n\x0f\x42\x41\x44GE_TYPE_FIRE\x10\x1b\x12\x14\n\x10\x42\x41\x44GE_TYPE_WATER\x10\x1c\x12\x14\n\x10\x42\x41\x44GE_TYPE_GRASS\x10\x1d\x12\x17\n\x13\x42\x41\x44GE_TYPE_ELECTRIC\x10\x1e\x12\x16\n\x12\x42\x41\x44GE_TYPE_PSYCHIC\x10\x1f\x12\x12\n\x0e\x42\x41\x44GE_TYPE_ICE\x10 \x12\x15\n\x11\x42\x41\x44GE_TYPE_DRAGON\x10!\x12\x13\n\x0f\x42\x41\x44GE_TYPE_DARK\x10\"\x12\x14\n\x10\x42\x41\x44GE_TYPE_FAIRY\x10#\x12\x17\n\x13\x42\x41\x44GE_SMALL_RATTATA\x10$\x12\x11\n\rBADGE_PIKACHU\x10%\x12\x0f\n\x0b\x42\x41\x44GE_UNOWN\x10&\x12\x1e\n\x1a\x42\x41\x44GE_POKEDEX_ENTRIES_GEN2\x10\'\x12\x19\n\x15\x42\x41\x44GE_RAID_BATTLE_WON\x10(\x12\x1e\n\x1a\x42\x41\x44GE_LEGENDARY_BATTLE_WON\x10)\x12\x15\n\x11\x42\x41\x44GE_BERRIES_FED\x10*\x12\x18\n\x14\x42\x41\x44GE_HOURS_DEFENDED\x10+\x12\x16\n\x12\x42\x41\x44GE_PLACE_HOLDER\x10,\x12\x1e\n\x1a\x42\x41\x44GE_POKEDEX_ENTRIES_GEN3\x10-\x12\x14\n\x0f\x42\x41\x44GE_EVENT_MIN\x10\xd0\x0f\x12!\n\x1c\x42\x41\x44GE_CHICAGO_FEST_JULY_2017\x10\xd1\x0f\x12)\n$BADGE_PIKACHU_OUTBREAK_YOKOHAMA_2017\x10\xd2\x0f\x12\"\n\x1d\x42\x41\x44GE_SAFARI_ZONE_EUROPE_2017\x10\xd3\x0f\x12(\n#BADGE_SAFARI_ZONE_EUROPE_2017_10_07\x10\xd4\x0f\x12(\n#BADGE_SAFARI_ZONE_EUROPE_2017_10_14\x10\xd5\x0f\x62\x06proto3')
+  serialized_pb=_b('\n!pogoprotos/enums/badge_type.proto\x12\x10pogoprotos.enums*\xf0\x14\n\tBadgeType\x12\x0f\n\x0b\x42\x41\x44GE_UNSET\x10\x00\x12\x13\n\x0f\x42\x41\x44GE_TRAVEL_KM\x10\x01\x12\x19\n\x15\x42\x41\x44GE_POKEDEX_ENTRIES\x10\x02\x12\x17\n\x13\x42\x41\x44GE_CAPTURE_TOTAL\x10\x03\x12\x17\n\x13\x42\x41\x44GE_DEFEATED_FORT\x10\x04\x12\x17\n\x13\x42\x41\x44GE_EVOLVED_TOTAL\x10\x05\x12\x17\n\x13\x42\x41\x44GE_HATCHED_TOTAL\x10\x06\x12\x1b\n\x17\x42\x41\x44GE_ENCOUNTERED_TOTAL\x10\x07\x12\x1b\n\x17\x42\x41\x44GE_POKESTOPS_VISITED\x10\x08\x12\x1a\n\x16\x42\x41\x44GE_UNIQUE_POKESTOPS\x10\t\x12\x19\n\x15\x42\x41\x44GE_POKEBALL_THROWN\x10\n\x12\x16\n\x12\x42\x41\x44GE_BIG_MAGIKARP\x10\x0b\x12\x18\n\x14\x42\x41\x44GE_DEPLOYED_TOTAL\x10\x0c\x12\x1b\n\x17\x42\x41\x44GE_BATTLE_ATTACK_WON\x10\r\x12\x1d\n\x19\x42\x41\x44GE_BATTLE_TRAINING_WON\x10\x0e\x12\x1b\n\x17\x42\x41\x44GE_BATTLE_DEFEND_WON\x10\x0f\x12\x19\n\x15\x42\x41\x44GE_PRESTIGE_RAISED\x10\x10\x12\x1a\n\x16\x42\x41\x44GE_PRESTIGE_DROPPED\x10\x11\x12\x15\n\x11\x42\x41\x44GE_TYPE_NORMAL\x10\x12\x12\x17\n\x13\x42\x41\x44GE_TYPE_FIGHTING\x10\x13\x12\x15\n\x11\x42\x41\x44GE_TYPE_FLYING\x10\x14\x12\x15\n\x11\x42\x41\x44GE_TYPE_POISON\x10\x15\x12\x15\n\x11\x42\x41\x44GE_TYPE_GROUND\x10\x16\x12\x13\n\x0f\x42\x41\x44GE_TYPE_ROCK\x10\x17\x12\x12\n\x0e\x42\x41\x44GE_TYPE_BUG\x10\x18\x12\x14\n\x10\x42\x41\x44GE_TYPE_GHOST\x10\x19\x12\x14\n\x10\x42\x41\x44GE_TYPE_STEEL\x10\x1a\x12\x13\n\x0f\x42\x41\x44GE_TYPE_FIRE\x10\x1b\x12\x14\n\x10\x42\x41\x44GE_TYPE_WATER\x10\x1c\x12\x14\n\x10\x42\x41\x44GE_TYPE_GRASS\x10\x1d\x12\x17\n\x13\x42\x41\x44GE_TYPE_ELECTRIC\x10\x1e\x12\x16\n\x12\x42\x41\x44GE_TYPE_PSYCHIC\x10\x1f\x12\x12\n\x0e\x42\x41\x44GE_TYPE_ICE\x10 \x12\x15\n\x11\x42\x41\x44GE_TYPE_DRAGON\x10!\x12\x13\n\x0f\x42\x41\x44GE_TYPE_DARK\x10\"\x12\x14\n\x10\x42\x41\x44GE_TYPE_FAIRY\x10#\x12\x17\n\x13\x42\x41\x44GE_SMALL_RATTATA\x10$\x12\x11\n\rBADGE_PIKACHU\x10%\x12\x0f\n\x0b\x42\x41\x44GE_UNOWN\x10&\x12\x1e\n\x1a\x42\x41\x44GE_POKEDEX_ENTRIES_GEN2\x10\'\x12\x19\n\x15\x42\x41\x44GE_RAID_BATTLE_WON\x10(\x12\x1e\n\x1a\x42\x41\x44GE_LEGENDARY_BATTLE_WON\x10)\x12\x15\n\x11\x42\x41\x44GE_BERRIES_FED\x10*\x12\x18\n\x14\x42\x41\x44GE_HOURS_DEFENDED\x10+\x12\x16\n\x12\x42\x41\x44GE_PLACE_HOLDER\x10,\x12\x1e\n\x1a\x42\x41\x44GE_POKEDEX_ENTRIES_GEN3\x10-\x12\x1a\n\x16\x42\x41\x44GE_CHALLENGE_QUESTS\x10.\x12\x17\n\x13\x42\x41\x44GE_MEW_ENCOUNTER\x10/\x12\x1b\n\x17\x42\x41\x44GE_MAX_LEVEL_FRIENDS\x10\x30\x12\x11\n\rBADGE_TRADING\x10\x31\x12\x1a\n\x16\x42\x41\x44GE_TRADING_DISTANCE\x10\x32\x12\x1e\n\x1a\x42\x41\x44GE_POKEDEX_ENTRIES_GEN4\x10\x33\x12\x14\n\x0f\x42\x41\x44GE_EVENT_MIN\x10\xd0\x0f\x12!\n\x1c\x42\x41\x44GE_CHICAGO_FEST_JULY_2017\x10\xd1\x0f\x12)\n$BADGE_PIKACHU_OUTBREAK_YOKOHAMA_2017\x10\xd2\x0f\x12\"\n\x1d\x42\x41\x44GE_SAFARI_ZONE_EUROPE_2017\x10\xd3\x0f\x12(\n#BADGE_SAFARI_ZONE_EUROPE_2017_10_07\x10\xd4\x0f\x12(\n#BADGE_SAFARI_ZONE_EUROPE_2017_10_14\x10\xd5\x0f\x12+\n&BADGE_CHICAGO_FEST_JULY_2018_SAT_NORTH\x10\xd6\x0f\x12+\n&BADGE_CHICAGO_FEST_JULY_2018_SAT_SOUTH\x10\xd7\x0f\x12+\n&BADGE_CHICAGO_FEST_JULY_2018_SUN_NORTH\x10\xd8\x0f\x12+\n&BADGE_CHICAGO_FEST_JULY_2018_SUN_SOUTH\x10\xd9\x0f\x12#\n\x1e\x42\x41\x44GE_APAC_PARTNER_JULY_2018_0\x10\xda\x0f\x12#\n\x1e\x42\x41\x44GE_APAC_PARTNER_JULY_2018_1\x10\xdb\x0f\x12#\n\x1e\x42\x41\x44GE_APAC_PARTNER_JULY_2018_2\x10\xdc\x0f\x12#\n\x1e\x42\x41\x44GE_APAC_PARTNER_JULY_2018_3\x10\xdd\x0f\x12#\n\x1e\x42\x41\x44GE_APAC_PARTNER_JULY_2018_4\x10\xde\x0f\x12#\n\x1e\x42\x41\x44GE_APAC_PARTNER_JULY_2018_5\x10\xdf\x0f\x12#\n\x1e\x42\x41\x44GE_APAC_PARTNER_JULY_2018_6\x10\xe0\x0f\x12#\n\x1e\x42\x41\x44GE_APAC_PARTNER_JULY_2018_7\x10\xe1\x0f\x12#\n\x1e\x42\x41\x44GE_APAC_PARTNER_JULY_2018_8\x10\xe2\x0f\x12#\n\x1e\x42\x41\x44GE_APAC_PARTNER_JULY_2018_9\x10\xe3\x0f\x12&\n!BADGE_YOKOSUKA_29_AUG_2018_MIKASA\x10\xe4\x0f\x12%\n BADGE_YOKOSUKA_29_AUG_2018_VERNY\x10\xe5\x0f\x12(\n#BADGE_YOKOSUKA_29_AUG_2018_KURIHAMA\x10\xe6\x0f\x12&\n!BADGE_YOKOSUKA_30_AUG_2018_MIKASA\x10\xe7\x0f\x12%\n BADGE_YOKOSUKA_30_AUG_2018_VERNY\x10\xe8\x0f\x12(\n#BADGE_YOKOSUKA_30_AUG_2018_KURIHAMA\x10\xe9\x0f\x12&\n!BADGE_YOKOSUKA_31_AUG_2018_MIKASA\x10\xea\x0f\x12%\n BADGE_YOKOSUKA_31_AUG_2018_VERNY\x10\xeb\x0f\x12(\n#BADGE_YOKOSUKA_31_AUG_2018_KURIHAMA\x10\xec\x0f\x12%\n BADGE_YOKOSUKA_1_SEP_2018_MIKASA\x10\xed\x0f\x12$\n\x1f\x42\x41\x44GE_YOKOSUKA_1_SEP_2018_VERNY\x10\xee\x0f\x12\'\n\"BADGE_YOKOSUKA_1_SEP_2018_KURIHAMA\x10\xef\x0f\x12%\n BADGE_YOKOSUKA_2_SEP_2018_MIKASA\x10\xf0\x0f\x12$\n\x1f\x42\x41\x44GE_YOKOSUKA_2_SEP_2018_VERNY\x10\xf1\x0f\x12\'\n\"BADGE_YOKOSUKA_2_SEP_2018_KURIHAMA\x10\xf2\x0f\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _BADGETYPE = _descriptor.EnumDescriptor(
   name='BadgeType',
@@ -215,34 +214,174 @@ _BADGETYPE = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='BADGE_EVENT_MIN', index=46, number=2000,
+      name='BADGE_CHALLENGE_QUESTS', index=46, number=46,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='BADGE_CHICAGO_FEST_JULY_2017', index=47, number=2001,
+      name='BADGE_MEW_ENCOUNTER', index=47, number=47,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='BADGE_PIKACHU_OUTBREAK_YOKOHAMA_2017', index=48, number=2002,
+      name='BADGE_MAX_LEVEL_FRIENDS', index=48, number=48,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='BADGE_SAFARI_ZONE_EUROPE_2017', index=49, number=2003,
+      name='BADGE_TRADING', index=49, number=49,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='BADGE_SAFARI_ZONE_EUROPE_2017_10_07', index=50, number=2004,
+      name='BADGE_TRADING_DISTANCE', index=50, number=50,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='BADGE_SAFARI_ZONE_EUROPE_2017_10_14', index=51, number=2005,
+      name='BADGE_POKEDEX_ENTRIES_GEN4', index=51, number=51,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_EVENT_MIN', index=52, number=2000,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_CHICAGO_FEST_JULY_2017', index=53, number=2001,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_PIKACHU_OUTBREAK_YOKOHAMA_2017', index=54, number=2002,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_SAFARI_ZONE_EUROPE_2017', index=55, number=2003,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_SAFARI_ZONE_EUROPE_2017_10_07', index=56, number=2004,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_SAFARI_ZONE_EUROPE_2017_10_14', index=57, number=2005,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_CHICAGO_FEST_JULY_2018_SAT_NORTH', index=58, number=2006,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_CHICAGO_FEST_JULY_2018_SAT_SOUTH', index=59, number=2007,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_CHICAGO_FEST_JULY_2018_SUN_NORTH', index=60, number=2008,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_CHICAGO_FEST_JULY_2018_SUN_SOUTH', index=61, number=2009,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_APAC_PARTNER_JULY_2018_0', index=62, number=2010,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_APAC_PARTNER_JULY_2018_1', index=63, number=2011,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_APAC_PARTNER_JULY_2018_2', index=64, number=2012,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_APAC_PARTNER_JULY_2018_3', index=65, number=2013,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_APAC_PARTNER_JULY_2018_4', index=66, number=2014,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_APAC_PARTNER_JULY_2018_5', index=67, number=2015,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_APAC_PARTNER_JULY_2018_6', index=68, number=2016,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_APAC_PARTNER_JULY_2018_7', index=69, number=2017,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_APAC_PARTNER_JULY_2018_8', index=70, number=2018,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_APAC_PARTNER_JULY_2018_9', index=71, number=2019,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_YOKOSUKA_29_AUG_2018_MIKASA', index=72, number=2020,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_YOKOSUKA_29_AUG_2018_VERNY', index=73, number=2021,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_YOKOSUKA_29_AUG_2018_KURIHAMA', index=74, number=2022,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_YOKOSUKA_30_AUG_2018_MIKASA', index=75, number=2023,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_YOKOSUKA_30_AUG_2018_VERNY', index=76, number=2024,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_YOKOSUKA_30_AUG_2018_KURIHAMA', index=77, number=2025,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_YOKOSUKA_31_AUG_2018_MIKASA', index=78, number=2026,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_YOKOSUKA_31_AUG_2018_VERNY', index=79, number=2027,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_YOKOSUKA_31_AUG_2018_KURIHAMA', index=80, number=2028,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_YOKOSUKA_1_SEP_2018_MIKASA', index=81, number=2029,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_YOKOSUKA_1_SEP_2018_VERNY', index=82, number=2030,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_YOKOSUKA_1_SEP_2018_KURIHAMA', index=83, number=2031,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_YOKOSUKA_2_SEP_2018_MIKASA', index=84, number=2032,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_YOKOSUKA_2_SEP_2018_VERNY', index=85, number=2033,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='BADGE_YOKOSUKA_2_SEP_2018_KURIHAMA', index=86, number=2034,
       options=None,
       type=None),
   ],
   containing_type=None,
   options=None,
   serialized_start=56,
-  serialized_end=1418,
+  serialized_end=2728,
 )
 _sym_db.RegisterEnumDescriptor(_BADGETYPE)
 
@@ -293,15 +432,51 @@ BADGE_BERRIES_FED = 42
 BADGE_HOURS_DEFENDED = 43
 BADGE_PLACE_HOLDER = 44
 BADGE_POKEDEX_ENTRIES_GEN3 = 45
+BADGE_CHALLENGE_QUESTS = 46
+BADGE_MEW_ENCOUNTER = 47
+BADGE_MAX_LEVEL_FRIENDS = 48
+BADGE_TRADING = 49
+BADGE_TRADING_DISTANCE = 50
+BADGE_POKEDEX_ENTRIES_GEN4 = 51
 BADGE_EVENT_MIN = 2000
 BADGE_CHICAGO_FEST_JULY_2017 = 2001
 BADGE_PIKACHU_OUTBREAK_YOKOHAMA_2017 = 2002
 BADGE_SAFARI_ZONE_EUROPE_2017 = 2003
 BADGE_SAFARI_ZONE_EUROPE_2017_10_07 = 2004
 BADGE_SAFARI_ZONE_EUROPE_2017_10_14 = 2005
+BADGE_CHICAGO_FEST_JULY_2018_SAT_NORTH = 2006
+BADGE_CHICAGO_FEST_JULY_2018_SAT_SOUTH = 2007
+BADGE_CHICAGO_FEST_JULY_2018_SUN_NORTH = 2008
+BADGE_CHICAGO_FEST_JULY_2018_SUN_SOUTH = 2009
+BADGE_APAC_PARTNER_JULY_2018_0 = 2010
+BADGE_APAC_PARTNER_JULY_2018_1 = 2011
+BADGE_APAC_PARTNER_JULY_2018_2 = 2012
+BADGE_APAC_PARTNER_JULY_2018_3 = 2013
+BADGE_APAC_PARTNER_JULY_2018_4 = 2014
+BADGE_APAC_PARTNER_JULY_2018_5 = 2015
+BADGE_APAC_PARTNER_JULY_2018_6 = 2016
+BADGE_APAC_PARTNER_JULY_2018_7 = 2017
+BADGE_APAC_PARTNER_JULY_2018_8 = 2018
+BADGE_APAC_PARTNER_JULY_2018_9 = 2019
+BADGE_YOKOSUKA_29_AUG_2018_MIKASA = 2020
+BADGE_YOKOSUKA_29_AUG_2018_VERNY = 2021
+BADGE_YOKOSUKA_29_AUG_2018_KURIHAMA = 2022
+BADGE_YOKOSUKA_30_AUG_2018_MIKASA = 2023
+BADGE_YOKOSUKA_30_AUG_2018_VERNY = 2024
+BADGE_YOKOSUKA_30_AUG_2018_KURIHAMA = 2025
+BADGE_YOKOSUKA_31_AUG_2018_MIKASA = 2026
+BADGE_YOKOSUKA_31_AUG_2018_VERNY = 2027
+BADGE_YOKOSUKA_31_AUG_2018_KURIHAMA = 2028
+BADGE_YOKOSUKA_1_SEP_2018_MIKASA = 2029
+BADGE_YOKOSUKA_1_SEP_2018_VERNY = 2030
+BADGE_YOKOSUKA_1_SEP_2018_KURIHAMA = 2031
+BADGE_YOKOSUKA_2_SEP_2018_MIKASA = 2032
+BADGE_YOKOSUKA_2_SEP_2018_VERNY = 2033
+BADGE_YOKOSUKA_2_SEP_2018_KURIHAMA = 2034
 
 
 DESCRIPTOR.enum_types_by_name['BadgeType'] = _BADGETYPE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 # @@protoc_insertion_point(module_scope)

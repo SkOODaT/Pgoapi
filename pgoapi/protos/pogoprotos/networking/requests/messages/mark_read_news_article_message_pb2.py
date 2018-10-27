@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\nLpogoprotos/networking/requests/messages/mark_read_news_article_message.proto\x12\'pogoprotos.networking.requests.messages\".\n\x1aMarkReadNewsArticleMessage\x12\x10\n\x08news_ids\x18\x01 \x03(\tb\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -57,6 +56,7 @@ _MARKREADNEWSARTICLEMESSAGE = _descriptor.Descriptor(
 )
 
 DESCRIPTOR.message_types_by_name['MarkReadNewsArticleMessage'] = _MARKREADNEWSARTICLEMESSAGE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 MarkReadNewsArticleMessage = _reflection.GeneratedProtocolMessageType('MarkReadNewsArticleMessage', (_message.Message,), dict(
   DESCRIPTOR = _MARKREADNEWSARTICLEMESSAGE,

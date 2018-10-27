@@ -24,7 +24,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   serialized_pb=_b('\n pogoprotos/data/raid/lobby.proto\x12\x14pogoprotos.data.raid\x1a/pogoprotos/data/battle/battle_participant.proto\x1a(pogoprotos/enums/weather_condition.proto\"\x80\x03\n\x05Lobby\x12\x10\n\x08lobby_id\x18\x01 \x03(\x05\x12:\n\x07players\x18\x02 \x03(\x0b\x32).pogoprotos.data.battle.BattleParticipant\x12\x1a\n\x12player_join_end_ms\x18\x03 \x01(\x03\x12 \n\x18pokemon_selection_end_ms\x18\x04 \x01(\x03\x12\x1c\n\x14raid_battle_start_ms\x18\x05 \x01(\x03\x12\x1a\n\x12raid_battle_end_ms\x18\x06 \x01(\x03\x12\x16\n\x0eraid_battle_id\x18\x08 \x01(\t\x12\x16\n\x0eowner_nickname\x18\t \x01(\t\x12\x0f\n\x07private\x18\n \x01(\x08\x12\x13\n\x0b\x63reation_ms\x18\x0b \x01(\x03\x12\x1c\n\x14\x62\x61ttle_plfe_instance\x18\x0c \x01(\x05\x12=\n\x11weather_condition\x18\r \x01(\x0e\x32\".pogoprotos.enums.WeatherConditionb\x06proto3')
   ,
   dependencies=[pogoprotos_dot_data_dot_battle_dot_battle__participant__pb2.DESCRIPTOR,pogoprotos_dot_enums_dot_weather__condition__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -139,6 +138,7 @@ _LOBBY = _descriptor.Descriptor(
 _LOBBY.fields_by_name['players'].message_type = pogoprotos_dot_data_dot_battle_dot_battle__participant__pb2._BATTLEPARTICIPANT
 _LOBBY.fields_by_name['weather_condition'].enum_type = pogoprotos_dot_enums_dot_weather__condition__pb2._WEATHERCONDITION
 DESCRIPTOR.message_types_by_name['Lobby'] = _LOBBY
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Lobby = _reflection.GeneratedProtocolMessageType('Lobby', (_message.Message,), dict(
   DESCRIPTOR = _LOBBY,

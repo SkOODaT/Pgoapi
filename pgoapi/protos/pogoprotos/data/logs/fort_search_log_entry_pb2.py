@@ -16,16 +16,16 @@ _sym_db = _symbol_database.Default()
 from pogoprotos.data import pokemon_data_pb2 as pogoprotos_dot_data_dot_pokemon__data__pb2
 from pogoprotos.inventory.item import item_data_pb2 as pogoprotos_dot_inventory_dot_item_dot_item__data__pb2
 from pogoprotos.map.fort import fort_type_pb2 as pogoprotos_dot_map_dot_fort_dot_fort__type__pb2
+from pogoprotos.data.gift import gift_box_pb2 as pogoprotos_dot_data_dot_gift_dot_gift__box__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/data/logs/fort_search_log_entry.proto',
   package='pogoprotos.data.logs',
   syntax='proto3',
-  serialized_pb=_b('\n0pogoprotos/data/logs/fort_search_log_entry.proto\x12\x14pogoprotos.data.logs\x1a\"pogoprotos/data/pokemon_data.proto\x1a)pogoprotos/inventory/item/item_data.proto\x1a#pogoprotos/map/fort/fort_type.proto\"\xe5\x03\n\x12\x46ortSearchLogEntry\x12?\n\x06result\x18\x01 \x01(\x0e\x32/.pogoprotos.data.logs.FortSearchLogEntry.Result\x12\x0f\n\x07\x66ort_id\x18\x02 \x01(\t\x12\x32\n\x05items\x18\x03 \x03(\x0b\x32#.pogoprotos.inventory.item.ItemData\x12\x0c\n\x04\x65ggs\x18\x04 \x01(\x05\x12\x32\n\x0cpokemon_eggs\x18\x05 \x03(\x0b\x32\x1c.pogoprotos.data.PokemonData\x12\x30\n\tfort_type\x18\x06 \x01(\x0e\x32\x1d.pogoprotos.map.fort.FortType\x12:\n\rawarded_items\x18\x07 \x03(\x0b\x32#.pogoprotos.inventory.item.ItemData\x12\x38\n\x0b\x62onus_items\x18\x08 \x03(\x0b\x32#.pogoprotos.inventory.item.ItemData\x12=\n\x10team_bonus_items\x18\t \x03(\x0b\x32#.pogoprotos.inventory.item.ItemData\" \n\x06Result\x12\t\n\x05UNSET\x10\x00\x12\x0b\n\x07SUCCESS\x10\x01\x62\x06proto3')
+  serialized_pb=_b('\n0pogoprotos/data/logs/fort_search_log_entry.proto\x12\x14pogoprotos.data.logs\x1a\"pogoprotos/data/pokemon_data.proto\x1a)pogoprotos/inventory/item/item_data.proto\x1a#pogoprotos/map/fort/fort_type.proto\x1a#pogoprotos/data/gift/gift_box.proto\"\x98\x04\n\x12\x46ortSearchLogEntry\x12?\n\x06result\x18\x01 \x01(\x0e\x32/.pogoprotos.data.logs.FortSearchLogEntry.Result\x12\x0f\n\x07\x66ort_id\x18\x02 \x01(\t\x12\x32\n\x05items\x18\x03 \x03(\x0b\x32#.pogoprotos.inventory.item.ItemData\x12\x0c\n\x04\x65ggs\x18\x04 \x01(\x05\x12\x32\n\x0cpokemon_eggs\x18\x05 \x03(\x0b\x32\x1c.pogoprotos.data.PokemonData\x12\x30\n\tfort_type\x18\x06 \x01(\x0e\x32\x1d.pogoprotos.map.fort.FortType\x12:\n\rawarded_items\x18\x07 \x03(\x0b\x32#.pogoprotos.inventory.item.ItemData\x12\x38\n\x0b\x62onus_items\x18\x08 \x03(\x0b\x32#.pogoprotos.inventory.item.ItemData\x12=\n\x10team_bonus_items\x18\t \x03(\x0b\x32#.pogoprotos.inventory.item.ItemData\x12\x31\n\ngift_boxes\x18\n \x03(\x0b\x32\x1d.pogoprotos.data.gift.GiftBox\" \n\x06Result\x12\t\n\x05UNSET\x10\x00\x12\x0b\n\x07SUCCESS\x10\x01\x62\x06proto3')
   ,
-  dependencies=[pogoprotos_dot_data_dot_pokemon__data__pb2.DESCRIPTOR,pogoprotos_dot_inventory_dot_item_dot_item__data__pb2.DESCRIPTOR,pogoprotos_dot_map_dot_fort_dot_fort__type__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+  dependencies=[pogoprotos_dot_data_dot_pokemon__data__pb2.DESCRIPTOR,pogoprotos_dot_inventory_dot_item_dot_item__data__pb2.DESCRIPTOR,pogoprotos_dot_map_dot_fort_dot_fort__type__pb2.DESCRIPTOR,pogoprotos_dot_data_dot_gift_dot_gift__box__pb2.DESCRIPTOR,])
 
 
 
@@ -46,8 +46,8 @@ _FORTSEARCHLOGENTRY_RESULT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=644,
-  serialized_end=676,
+  serialized_start=732,
+  serialized_end=764,
 )
 _sym_db.RegisterEnumDescriptor(_FORTSEARCHLOGENTRY_RESULT)
 
@@ -122,6 +122,13 @@ _FORTSEARCHLOGENTRY = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='gift_boxes', full_name='pogoprotos.data.logs.FortSearchLogEntry.gift_boxes', index=9,
+      number=10, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -135,8 +142,8 @@ _FORTSEARCHLOGENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=191,
-  serialized_end=676,
+  serialized_start=228,
+  serialized_end=764,
 )
 
 _FORTSEARCHLOGENTRY.fields_by_name['result'].enum_type = _FORTSEARCHLOGENTRY_RESULT
@@ -146,8 +153,10 @@ _FORTSEARCHLOGENTRY.fields_by_name['fort_type'].enum_type = pogoprotos_dot_map_d
 _FORTSEARCHLOGENTRY.fields_by_name['awarded_items'].message_type = pogoprotos_dot_inventory_dot_item_dot_item__data__pb2._ITEMDATA
 _FORTSEARCHLOGENTRY.fields_by_name['bonus_items'].message_type = pogoprotos_dot_inventory_dot_item_dot_item__data__pb2._ITEMDATA
 _FORTSEARCHLOGENTRY.fields_by_name['team_bonus_items'].message_type = pogoprotos_dot_inventory_dot_item_dot_item__data__pb2._ITEMDATA
+_FORTSEARCHLOGENTRY.fields_by_name['gift_boxes'].message_type = pogoprotos_dot_data_dot_gift_dot_gift__box__pb2._GIFTBOX
 _FORTSEARCHLOGENTRY_RESULT.containing_type = _FORTSEARCHLOGENTRY
 DESCRIPTOR.message_types_by_name['FortSearchLogEntry'] = _FORTSEARCHLOGENTRY
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 FortSearchLogEntry = _reflection.GeneratedProtocolMessageType('FortSearchLogEntry', (_message.Message,), dict(
   DESCRIPTOR = _FORTSEARCHLOGENTRY,

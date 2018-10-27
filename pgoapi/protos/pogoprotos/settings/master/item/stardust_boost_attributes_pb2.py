@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\n?pogoprotos/settings/master/item/stardust_boost_attributes.proto\x12\x1fpogoprotos.settings.master.item\"Q\n\x17StardustBoostAttributes\x12\x1b\n\x13stardust_multiplier\x18\x01 \x01(\x02\x12\x19\n\x11\x62oost_duration_ms\x18\x02 \x01(\x05\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -64,6 +63,7 @@ _STARDUSTBOOSTATTRIBUTES = _descriptor.Descriptor(
 )
 
 DESCRIPTOR.message_types_by_name['StardustBoostAttributes'] = _STARDUSTBOOSTATTRIBUTES
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 StardustBoostAttributes = _reflection.GeneratedProtocolMessageType('StardustBoostAttributes', (_message.Message,), dict(
   DESCRIPTOR = _STARDUSTBOOSTATTRIBUTES,

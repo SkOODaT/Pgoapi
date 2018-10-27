@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\n0pogoprotos/data/quests/catch_pokemon_quest.proto\x12\x16pogoprotos.data.quests\"\x13\n\x11\x43\x61tchPokemonQuestb\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -50,6 +49,7 @@ _CATCHPOKEMONQUEST = _descriptor.Descriptor(
 )
 
 DESCRIPTOR.message_types_by_name['CatchPokemonQuest'] = _CATCHPOKEMONQUEST
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 CatchPokemonQuest = _reflection.GeneratedProtocolMessageType('CatchPokemonQuest', (_message.Message,), dict(
   DESCRIPTOR = _CATCHPOKEMONQUEST,

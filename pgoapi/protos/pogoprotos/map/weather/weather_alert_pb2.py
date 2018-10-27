@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\n*pogoprotos/map/weather/weather_alert.proto\x12\x16pogoprotos.map.weather\"\x96\x01\n\x0cWeatherAlert\x12?\n\x08severity\x18\x01 \x01(\x0e\x32-.pogoprotos.map.weather.WeatherAlert.Severity\x12\x14\n\x0cwarn_weather\x18\x02 \x01(\x08\"/\n\x08Severity\x12\x08\n\x04NONE\x10\x00\x12\x0c\n\x08MODERATE\x10\x01\x12\x0b\n\x07\x45XTREME\x10\x02\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -93,6 +92,7 @@ _WEATHERALERT = _descriptor.Descriptor(
 _WEATHERALERT.fields_by_name['severity'].enum_type = _WEATHERALERT_SEVERITY
 _WEATHERALERT_SEVERITY.containing_type = _WEATHERALERT
 DESCRIPTOR.message_types_by_name['WeatherAlert'] = _WEATHERALERT
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 WeatherAlert = _reflection.GeneratedProtocolMessageType('WeatherAlert', (_message.Message,), dict(
   DESCRIPTOR = _WEATHERALERT,

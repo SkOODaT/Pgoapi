@@ -13,17 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-from pogoprotos.data import redeem_passcode_reward_pb2 as pogoprotos_dot_data_dot_redeem__passcode__reward__pb2
+from pogoprotos.data.redeem import redeem_passcode_reward_pb2 as pogoprotos_dot_data_dot_redeem_dot_redeem__passcode__reward__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/data/logs/passcode_rewards_log_entry.proto',
   package='pogoprotos.data.logs',
   syntax='proto3',
-  serialized_pb=_b('\n5pogoprotos/data/logs/passcode_rewards_log_entry.proto\x12\x14pogoprotos.data.logs\x1a,pogoprotos/data/redeem_passcode_reward.proto\"\xcb\x01\n\x17PasscodeRewardsLogEntry\x12\x44\n\x06result\x18\x01 \x01(\x0e\x32\x34.pogoprotos.data.logs.PasscodeRewardsLogEntry.Result\x12\x10\n\x08passcode\x18\x02 \x01(\t\x12\x36\n\x07rewards\x18\x03 \x01(\x0b\x32%.pogoprotos.data.RedeemPasscodeReward\" \n\x06Result\x12\t\n\x05UNSET\x10\x00\x12\x0b\n\x07SUCCESS\x10\x01\x62\x06proto3')
+  serialized_pb=_b('\n5pogoprotos/data/logs/passcode_rewards_log_entry.proto\x12\x14pogoprotos.data.logs\x1a\x33pogoprotos/data/redeem/redeem_passcode_reward.proto\"\xd2\x01\n\x17PasscodeRewardsLogEntry\x12\x44\n\x06result\x18\x01 \x01(\x0e\x32\x34.pogoprotos.data.logs.PasscodeRewardsLogEntry.Result\x12\x10\n\x08passcode\x18\x02 \x01(\t\x12=\n\x07rewards\x18\x03 \x01(\x0b\x32,.pogoprotos.data.redeem.RedeemPasscodeReward\" \n\x06Result\x12\t\n\x05UNSET\x10\x00\x12\x0b\n\x07SUCCESS\x10\x01\x62\x06proto3')
   ,
-  dependencies=[pogoprotos_dot_data_dot_redeem__passcode__reward__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+  dependencies=[pogoprotos_dot_data_dot_redeem_dot_redeem__passcode__reward__pb2.DESCRIPTOR,])
 
 
 
@@ -44,8 +43,8 @@ _PASSCODEREWARDSLOGENTRY_RESULT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=297,
-  serialized_end=329,
+  serialized_start=311,
+  serialized_end=343,
 )
 _sym_db.RegisterEnumDescriptor(_PASSCODEREWARDSLOGENTRY_RESULT)
 
@@ -91,14 +90,15 @@ _PASSCODEREWARDSLOGENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=126,
-  serialized_end=329,
+  serialized_start=133,
+  serialized_end=343,
 )
 
 _PASSCODEREWARDSLOGENTRY.fields_by_name['result'].enum_type = _PASSCODEREWARDSLOGENTRY_RESULT
-_PASSCODEREWARDSLOGENTRY.fields_by_name['rewards'].message_type = pogoprotos_dot_data_dot_redeem__passcode__reward__pb2._REDEEMPASSCODEREWARD
+_PASSCODEREWARDSLOGENTRY.fields_by_name['rewards'].message_type = pogoprotos_dot_data_dot_redeem_dot_redeem__passcode__reward__pb2._REDEEMPASSCODEREWARD
 _PASSCODEREWARDSLOGENTRY_RESULT.containing_type = _PASSCODEREWARDSLOGENTRY
 DESCRIPTOR.message_types_by_name['PasscodeRewardsLogEntry'] = _PASSCODEREWARDSLOGENTRY
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 PasscodeRewardsLogEntry = _reflection.GeneratedProtocolMessageType('PasscodeRewardsLogEntry', (_message.Message,), dict(
   DESCRIPTOR = _PASSCODEREWARDSLOGENTRY,

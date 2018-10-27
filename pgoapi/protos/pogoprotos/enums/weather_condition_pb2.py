@@ -22,7 +22,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\n(pogoprotos/enums/weather_condition.proto\x12\x10pogoprotos.enums*q\n\x10WeatherCondition\x12\x08\n\x04NONE\x10\x00\x12\t\n\x05\x43LEAR\x10\x01\x12\t\n\x05RAINY\x10\x02\x12\x11\n\rPARTLY_CLOUDY\x10\x03\x12\x0c\n\x08OVERCAST\x10\x04\x12\t\n\x05WINDY\x10\x05\x12\x08\n\x04SNOW\x10\x06\x12\x07\n\x03\x46OG\x10\x07\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _WEATHERCONDITION = _descriptor.EnumDescriptor(
   name='WeatherCondition',
@@ -82,6 +81,7 @@ FOG = 7
 
 
 DESCRIPTOR.enum_types_by_name['WeatherCondition'] = _WEATHERCONDITION
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 # @@protoc_insertion_point(module_scope)

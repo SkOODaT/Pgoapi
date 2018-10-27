@@ -23,7 +23,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   serialized_pb=_b('\n=pogoprotos/networking/responses/fetch_all_news_response.proto\x12\x1fpogoprotos.networking.responses\x1a\'pogoprotos/data/news/current_news.proto\"\xd2\x01\n\x14\x46\x65tchAllNewsResponse\x12L\n\x06result\x18\x01 \x01(\x0e\x32<.pogoprotos.networking.responses.FetchAllNewsResponse.Result\x12\x37\n\x0c\x63urrent_news\x18\x02 \x01(\x0b\x32!.pogoprotos.data.news.CurrentNews\"3\n\x06Result\x12\t\n\x05UNSET\x10\x00\x12\x0b\n\x07SUCCESS\x10\x01\x12\x11\n\rNO_NEWS_FOUND\x10\x02\x62\x06proto3')
   ,
   dependencies=[pogoprotos_dot_data_dot_news_dot_current__news__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -96,6 +95,7 @@ _FETCHALLNEWSRESPONSE.fields_by_name['result'].enum_type = _FETCHALLNEWSRESPONSE
 _FETCHALLNEWSRESPONSE.fields_by_name['current_news'].message_type = pogoprotos_dot_data_dot_news_dot_current__news__pb2._CURRENTNEWS
 _FETCHALLNEWSRESPONSE_RESULT.containing_type = _FETCHALLNEWSRESPONSE
 DESCRIPTOR.message_types_by_name['FetchAllNewsResponse'] = _FETCHALLNEWSRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 FetchAllNewsResponse = _reflection.GeneratedProtocolMessageType('FetchAllNewsResponse', (_message.Message,), dict(
   DESCRIPTOR = _FETCHALLNEWSRESPONSE,

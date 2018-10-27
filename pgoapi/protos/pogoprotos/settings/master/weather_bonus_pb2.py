@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\n.pogoprotos/settings/master/weather_bonus.proto\x12\x1apogoprotos.settings.master\"\xf6\x01\n\x0cWeatherBonus\x12\x1b\n\x13\x63p_base_level_bonus\x18\x01 \x01(\x05\x12$\n\x1cguaranteed_individual_values\x18\x02 \x01(\x05\x12!\n\x19stardust_bonus_multiplier\x18\x03 \x01(\x01\x12\x1f\n\x17\x61ttack_bonus_multiplier\x18\x04 \x01(\x01\x12*\n\"raid_encounter_cp_base_level_bonus\x18\x05 \x01(\x05\x12\x33\n+raid_encounter_guaranteed_individual_values\x18\x06 \x01(\x05\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -92,6 +91,7 @@ _WEATHERBONUS = _descriptor.Descriptor(
 )
 
 DESCRIPTOR.message_types_by_name['WeatherBonus'] = _WEATHERBONUS
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 WeatherBonus = _reflection.GeneratedProtocolMessageType('WeatherBonus', (_message.Message,), dict(
   DESCRIPTOR = _WEATHERBONUS,

@@ -19,9 +19,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/settings/map_settings.proto',
   package='pogoprotos.settings',
   syntax='proto3',
-  serialized_pb=_b('\n&pogoprotos/settings/map_settings.proto\x12\x13pogoprotos.settings\"\xb2\x02\n\x0bMapSettings\x12\x1d\n\x15pokemon_visible_range\x18\x01 \x01(\x01\x12\x1d\n\x15poke_nav_range_meters\x18\x02 \x01(\x01\x12\x1e\n\x16\x65ncounter_range_meters\x18\x03 \x01(\x01\x12+\n#get_map_objects_min_refresh_seconds\x18\x04 \x01(\x02\x12+\n#get_map_objects_max_refresh_seconds\x18\x05 \x01(\x02\x12+\n#get_map_objects_min_distance_meters\x18\x06 \x01(\x02\x12\x1b\n\x13google_maps_api_key\x18\x07 \x01(\t\x12!\n\x19min_nearby_hide_sightings\x18\x08 \x01(\x05\x62\x06proto3')
+  serialized_pb=_b('\n&pogoprotos/settings/map_settings.proto\x12\x13pogoprotos.settings\"\xf7\x02\n\x0bMapSettings\x12\x1d\n\x15pokemon_visible_range\x18\x01 \x01(\x01\x12\x1d\n\x15poke_nav_range_meters\x18\x02 \x01(\x01\x12\x1e\n\x16\x65ncounter_range_meters\x18\x03 \x01(\x01\x12+\n#get_map_objects_min_refresh_seconds\x18\x04 \x01(\x02\x12+\n#get_map_objects_max_refresh_seconds\x18\x05 \x01(\x02\x12+\n#get_map_objects_min_distance_meters\x18\x06 \x01(\x02\x12\x1b\n\x13google_maps_api_key\x18\x07 \x01(\t\x12!\n\x19min_nearby_hide_sightings\x18\x08 \x01(\x05\x12\x1e\n\x16\x65nable_special_weather\x18\t \x01(\x08\x12#\n\x1bspecial_weather_probability\x18\n \x01(\x02\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -89,6 +88,20 @@ _MAPSETTINGS = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='enable_special_weather', full_name='pogoprotos.settings.MapSettings.enable_special_weather', index=8,
+      number=9, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='special_weather_probability', full_name='pogoprotos.settings.MapSettings.special_weather_probability', index=9,
+      number=10, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -102,10 +115,11 @@ _MAPSETTINGS = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=64,
-  serialized_end=370,
+  serialized_end=439,
 )
 
 DESCRIPTOR.message_types_by_name['MapSettings'] = _MAPSETTINGS
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 MapSettings = _reflection.GeneratedProtocolMessageType('MapSettings', (_message.Message,), dict(
   DESCRIPTOR = _MAPSETTINGS,

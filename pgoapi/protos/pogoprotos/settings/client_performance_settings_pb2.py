@@ -19,9 +19,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/settings/client_performance_settings.proto',
   package='pogoprotos.settings',
   syntax='proto3',
-  serialized_pb=_b('\n5pogoprotos/settings/client_performance_settings.proto\x12\x13pogoprotos.settings\"g\n\x19\x43lientPerformanceSettings\x12!\n\x19\x65nable_local_disk_caching\x18\x01 \x01(\x08\x12\'\n\x1fmax_number_local_battle_parties\x18\x02 \x01(\x05\x62\x06proto3')
+  serialized_pb=_b('\n5pogoprotos/settings/client_performance_settings.proto\x12\x13pogoprotos.settings\"\x92\x01\n\x19\x43lientPerformanceSettings\x12!\n\x19\x65nable_local_disk_caching\x18\x01 \x01(\x08\x12\'\n\x1fmax_number_local_battle_parties\x18\x02 \x01(\x05\x12)\n!multi_pokemon_battle_party_select\x18\x03 \x01(\x08\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -47,6 +46,13 @@ _CLIENTPERFORMANCESETTINGS = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='multi_pokemon_battle_party_select', full_name='pogoprotos.settings.ClientPerformanceSettings.multi_pokemon_battle_party_select', index=2,
+      number=3, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -59,11 +65,12 @@ _CLIENTPERFORMANCESETTINGS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=78,
-  serialized_end=181,
+  serialized_start=79,
+  serialized_end=225,
 )
 
 DESCRIPTOR.message_types_by_name['ClientPerformanceSettings'] = _CLIENTPERFORMANCESETTINGS
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 ClientPerformanceSettings = _reflection.GeneratedProtocolMessageType('ClientPerformanceSettings', (_message.Message,), dict(
   DESCRIPTOR = _CLIENTPERFORMANCESETTINGS,

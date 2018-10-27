@@ -23,7 +23,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   serialized_pb=_b('\nApogoprotos/networking/responses/get_holo_inventory_response.proto\x12\x1fpogoprotos.networking.responses\x1a*pogoprotos/inventory/inventory_delta.proto\"j\n\x18GetHoloInventoryResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12=\n\x0finventory_delta\x18\x02 \x01(\x0b\x32$.pogoprotos.inventory.InventoryDeltab\x06proto3')
   ,
   dependencies=[pogoprotos_dot_inventory_dot_inventory__delta__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -67,6 +66,7 @@ _GETHOLOINVENTORYRESPONSE = _descriptor.Descriptor(
 
 _GETHOLOINVENTORYRESPONSE.fields_by_name['inventory_delta'].message_type = pogoprotos_dot_inventory_dot_inventory__delta__pb2._INVENTORYDELTA
 DESCRIPTOR.message_types_by_name['GetHoloInventoryResponse'] = _GETHOLOINVENTORYRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 GetHoloInventoryResponse = _reflection.GeneratedProtocolMessageType('GetHoloInventoryResponse', (_message.Message,), dict(
   DESCRIPTOR = _GETHOLOINVENTORYRESPONSE,

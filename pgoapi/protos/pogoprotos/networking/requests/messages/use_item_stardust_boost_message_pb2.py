@@ -23,7 +23,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   serialized_pb=_b('\nMpogoprotos/networking/requests/messages/use_item_stardust_boost_message.proto\x12\'pogoprotos.networking.requests.messages\x1a\'pogoprotos/inventory/item/item_id.proto\"N\n\x1bUseItemStardustBoostMessage\x12/\n\x04item\x18\x01 \x01(\x0e\x32!.pogoprotos.inventory.item.ItemIdb\x06proto3')
   ,
   dependencies=[pogoprotos_dot_inventory_dot_item_dot_item__id__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -60,6 +59,7 @@ _USEITEMSTARDUSTBOOSTMESSAGE = _descriptor.Descriptor(
 
 _USEITEMSTARDUSTBOOSTMESSAGE.fields_by_name['item'].enum_type = pogoprotos_dot_inventory_dot_item_dot_item__id__pb2._ITEMID
 DESCRIPTOR.message_types_by_name['UseItemStardustBoostMessage'] = _USEITEMSTARDUSTBOOSTMESSAGE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 UseItemStardustBoostMessage = _reflection.GeneratedProtocolMessageType('UseItemStardustBoostMessage', (_message.Message,), dict(
   DESCRIPTOR = _USEITEMSTARDUSTBOOSTMESSAGE,

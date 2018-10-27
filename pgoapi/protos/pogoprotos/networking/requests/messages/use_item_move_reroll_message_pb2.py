@@ -23,7 +23,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   serialized_pb=_b('\nJpogoprotos/networking/requests/messages/use_item_move_reroll_message.proto\x12\'pogoprotos.networking.requests.messages\x1a\'pogoprotos/inventory/item/item_id.proto\"b\n\x18UseItemMoveRerollMessage\x12\x32\n\x07item_id\x18\x01 \x01(\x0e\x32!.pogoprotos.inventory.item.ItemId\x12\x12\n\npokemon_id\x18\x02 \x01(\x06\x62\x06proto3')
   ,
   dependencies=[pogoprotos_dot_inventory_dot_item_dot_item__id__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -67,6 +66,7 @@ _USEITEMMOVEREROLLMESSAGE = _descriptor.Descriptor(
 
 _USEITEMMOVEREROLLMESSAGE.fields_by_name['item_id'].enum_type = pogoprotos_dot_inventory_dot_item_dot_item__id__pb2._ITEMID
 DESCRIPTOR.message_types_by_name['UseItemMoveRerollMessage'] = _USEITEMMOVEREROLLMESSAGE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 UseItemMoveRerollMessage = _reflection.GeneratedProtocolMessageType('UseItemMoveRerollMessage', (_message.Message,), dict(
   DESCRIPTOR = _USEITEMMOVEREROLLMESSAGE,

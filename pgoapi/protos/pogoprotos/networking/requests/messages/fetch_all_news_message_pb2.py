@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\nDpogoprotos/networking/requests/messages/fetch_all_news_message.proto\x12\'pogoprotos.networking.requests.messages\"\x15\n\x13\x46\x65tchAllNewsMessageb\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -50,6 +49,7 @@ _FETCHALLNEWSMESSAGE = _descriptor.Descriptor(
 )
 
 DESCRIPTOR.message_types_by_name['FetchAllNewsMessage'] = _FETCHALLNEWSMESSAGE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 FetchAllNewsMessage = _reflection.GeneratedProtocolMessageType('FetchAllNewsMessage', (_message.Message,), dict(
   DESCRIPTOR = _FETCHALLNEWSMESSAGE,

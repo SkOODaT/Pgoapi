@@ -19,9 +19,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/settings/master/encounter_settings.proto',
   package='pogoprotos.settings.master',
   syntax='proto3',
-  serialized_pb=_b('\n3pogoprotos/settings/master/encounter_settings.proto\x12\x1apogoprotos.settings.master\"\x97\x04\n\x11\x45ncounterSettings\x12\x1c\n\x14spin_bonus_threshold\x18\x01 \x01(\x02\x12!\n\x19\x65xcellent_throw_threshold\x18\x02 \x01(\x02\x12\x1d\n\x15great_throw_threshold\x18\x03 \x01(\x02\x12\x1c\n\x14nice_throw_threshold\x18\x04 \x01(\x02\x12\x1b\n\x13milestone_threshold\x18\x05 \x01(\x05\x12\x1c\n\x14\x61r_plus_mode_enabled\x18\x06 \x01(\x08\x12$\n\x1c\x61r_close_proximity_threshold\x18\x07 \x01(\x02\x12\"\n\x1a\x61r_low_awareness_threshold\x18\x08 \x01(\x02\x12%\n\x1d\x61r_close_proximity_multiplier\x18\t \x01(\x02\x12&\n\x1e\x61r_awareness_penalty_threshold\x18\n \x01(\x02\x12\'\n\x1f\x61r_low_awareness_max_multiplier\x18\x0b \x01(\x02\x12\x30\n(ar_high_awareness_min_penalty_multiplier\x18\x0c \x01(\x02\x12\'\n\x1f\x61r_plus_attempts_until_flee_max\x18\r \x01(\x05\x12,\n$ar_plus_attempts_until_flee_infinite\x18\x0e \x01(\x05\x62\x06proto3')
+  serialized_pb=_b('\n3pogoprotos/settings/master/encounter_settings.proto\x12\x1apogoprotos.settings.master\"\xd3\x05\n\x11\x45ncounterSettings\x12\x1c\n\x14spin_bonus_threshold\x18\x01 \x01(\x02\x12!\n\x19\x65xcellent_throw_threshold\x18\x02 \x01(\x02\x12\x1d\n\x15great_throw_threshold\x18\x03 \x01(\x02\x12\x1c\n\x14nice_throw_threshold\x18\x04 \x01(\x02\x12\x1b\n\x13milestone_threshold\x18\x05 \x01(\x05\x12\x1c\n\x14\x61r_plus_mode_enabled\x18\x06 \x01(\x08\x12$\n\x1c\x61r_close_proximity_threshold\x18\x07 \x01(\x02\x12\"\n\x1a\x61r_low_awareness_threshold\x18\x08 \x01(\x02\x12%\n\x1d\x61r_close_proximity_multiplier\x18\t \x01(\x02\x12&\n\x1e\x61r_awareness_penalty_threshold\x18\n \x01(\x02\x12\'\n\x1f\x61r_low_awareness_max_multiplier\x18\x0b \x01(\x02\x12\x30\n(ar_high_awareness_min_penalty_multiplier\x18\x0c \x01(\x02\x12\'\n\x1f\x61r_plus_attempts_until_flee_max\x18\r \x01(\x05\x12,\n$ar_plus_attempts_until_flee_infinite\x18\x0e \x01(\x05\x12$\n\x1c\x65scaped_bonus_multiplier_max\x18\x0f \x01(\x02\x12\x33\n+escaped_bonus_multiplier_by_excellent_throw\x18\x10 \x01(\x02\x12/\n\'escaped_bonus_multiplier_by_great_throw\x18\x11 \x01(\x02\x12.\n&escaped_bonus_multiplier_by_nice_throw\x18\x12 \x01(\x02\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -131,6 +130,34 @@ _ENCOUNTERSETTINGS = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='escaped_bonus_multiplier_max', full_name='pogoprotos.settings.master.EncounterSettings.escaped_bonus_multiplier_max', index=14,
+      number=15, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='escaped_bonus_multiplier_by_excellent_throw', full_name='pogoprotos.settings.master.EncounterSettings.escaped_bonus_multiplier_by_excellent_throw', index=15,
+      number=16, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='escaped_bonus_multiplier_by_great_throw', full_name='pogoprotos.settings.master.EncounterSettings.escaped_bonus_multiplier_by_great_throw', index=16,
+      number=17, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='escaped_bonus_multiplier_by_nice_throw', full_name='pogoprotos.settings.master.EncounterSettings.escaped_bonus_multiplier_by_nice_throw', index=17,
+      number=18, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -144,10 +171,11 @@ _ENCOUNTERSETTINGS = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=84,
-  serialized_end=619,
+  serialized_end=807,
 )
 
 DESCRIPTOR.message_types_by_name['EncounterSettings'] = _ENCOUNTERSETTINGS
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 EncounterSettings = _reflection.GeneratedProtocolMessageType('EncounterSettings', (_message.Message,), dict(
   DESCRIPTOR = _ENCOUNTERSETTINGS,

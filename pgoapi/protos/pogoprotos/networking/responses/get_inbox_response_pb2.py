@@ -19,9 +19,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/networking/responses/get_inbox_response.proto',
   package='pogoprotos.networking.responses',
   syntax='proto3',
-  serialized_pb=_b('\n8pogoprotos/networking/responses/get_inbox_response.proto\x12\x1fpogoprotos.networking.responses\"\xa8\x07\n\x10GetInboxResponse\x12H\n\x06result\x18\x01 \x01(\x0e\x32\x38.pogoprotos.networking.responses.GetInboxResponse.Result\x12L\n\x05inbox\x18\x02 \x01(\x0b\x32=.pogoprotos.networking.responses.GetInboxResponse.ClientInbox\x1a\xcc\x05\n\x0b\x43lientInbox\x12\x61\n\rnotifications\x18\x01 \x03(\x0b\x32J.pogoprotos.networking.responses.GetInboxResponse.ClientInbox.Notification\x12i\n\x11\x62uiltin_variables\x18\x02 \x03(\x0b\x32N.pogoprotos.networking.responses.GetInboxResponse.ClientInbox.TemplateVariable\x1a\x84\x03\n\x0cNotification\x12\x17\n\x0fnotification_id\x18\x01 \x01(\t\x12\x11\n\ttitle_key\x18\x02 \x01(\t\x12\x10\n\x08\x63\x61tegory\x18\x03 \x01(\t\x12\x1b\n\x13\x63reate_timestamp_ms\x18\x04 \x01(\x03\x12\x61\n\tvariables\x18\x05 \x03(\x0b\x32N.pogoprotos.networking.responses.GetInboxResponse.ClientInbox.TemplateVariable\x12`\n\x06labels\x18\x06 \x03(\x0e\x32P.pogoprotos.networking.responses.GetInboxResponse.ClientInbox.Notification.Label\x12\x16\n\x0e\x65xpire_time_ms\x18\x07 \x01(\x03\"<\n\x05Label\x12\x0f\n\x0bUNSET_LABEL\x10\x00\x12\n\n\x06UNREAD\x10\x01\x12\x07\n\x03NEW\x10\x02\x12\r\n\tIMMEDIATE\x10\x03\x1ah\n\x10TemplateVariable\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0f\n\x07literal\x18\x02 \x01(\t\x12\x0b\n\x03key\x18\x03 \x01(\t\x12\x14\n\x0clookup_table\x18\x04 \x01(\t\x12\x12\n\nbyte_value\x18\x05 \x01(\x0c\"-\n\x06Result\x12\t\n\x05UNSET\x10\x00\x12\x0b\n\x07SUCCESS\x10\x01\x12\x0b\n\x07\x46\x41ILURE\x10\x02\x62\x06proto3')
+  serialized_pb=_b('\n8pogoprotos/networking/responses/get_inbox_response.proto\x12\x1fpogoprotos.networking.responses\"\xb7\x07\n\x10GetInboxResponse\x12H\n\x06result\x18\x01 \x01(\x0e\x32\x38.pogoprotos.networking.responses.GetInboxResponse.Result\x12L\n\x05inbox\x18\x02 \x01(\x0b\x32=.pogoprotos.networking.responses.GetInboxResponse.ClientInbox\x1a\xcc\x05\n\x0b\x43lientInbox\x12\x61\n\rnotifications\x18\x01 \x03(\x0b\x32J.pogoprotos.networking.responses.GetInboxResponse.ClientInbox.Notification\x12i\n\x11\x62uiltin_variables\x18\x02 \x03(\x0b\x32N.pogoprotos.networking.responses.GetInboxResponse.ClientInbox.TemplateVariable\x1a\x84\x03\n\x0cNotification\x12\x17\n\x0fnotification_id\x18\x01 \x01(\t\x12\x11\n\ttitle_key\x18\x02 \x01(\t\x12\x10\n\x08\x63\x61tegory\x18\x03 \x01(\t\x12\x1b\n\x13\x63reate_timestamp_ms\x18\x04 \x01(\x03\x12\x61\n\tvariables\x18\x05 \x03(\x0b\x32N.pogoprotos.networking.responses.GetInboxResponse.ClientInbox.TemplateVariable\x12`\n\x06labels\x18\x06 \x03(\x0e\x32P.pogoprotos.networking.responses.GetInboxResponse.ClientInbox.Notification.Label\x12\x16\n\x0e\x65xpire_time_ms\x18\x07 \x01(\x03\"<\n\x05Label\x12\x0f\n\x0bUNSET_LABEL\x10\x00\x12\n\n\x06UNREAD\x10\x01\x12\x07\n\x03NEW\x10\x02\x12\r\n\tIMMEDIATE\x10\x03\x1ah\n\x10TemplateVariable\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0f\n\x07literal\x18\x02 \x01(\t\x12\x0b\n\x03key\x18\x03 \x01(\t\x12\x14\n\x0clookup_table\x18\x04 \x01(\t\x12\x12\n\nbyte_value\x18\x05 \x01(\x0c\"<\n\x06Result\x12\t\n\x05UNSET\x10\x00\x12\x0b\n\x07SUCCESS\x10\x01\x12\x0b\n\x07\x46\x41ILURE\x10\x02\x12\r\n\tTIMED_OUT\x10\x03\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -73,11 +72,15 @@ _GETINBOXRESPONSE_RESULT = _descriptor.EnumDescriptor(
       name='FAILURE', index=2, number=2,
       options=None,
       type=None),
+    _descriptor.EnumValueDescriptor(
+      name='TIMED_OUT', index=3, number=3,
+      options=None,
+      type=None),
   ],
   containing_type=None,
   options=None,
   serialized_start=985,
-  serialized_end=1030,
+  serialized_end=1045,
 )
 _sym_db.RegisterEnumDescriptor(_GETINBOXRESPONSE_RESULT)
 
@@ -285,7 +288,7 @@ _GETINBOXRESPONSE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=94,
-  serialized_end=1030,
+  serialized_end=1045,
 )
 
 _GETINBOXRESPONSE_CLIENTINBOX_NOTIFICATION.fields_by_name['variables'].message_type = _GETINBOXRESPONSE_CLIENTINBOX_TEMPLATEVARIABLE
@@ -300,6 +303,7 @@ _GETINBOXRESPONSE.fields_by_name['result'].enum_type = _GETINBOXRESPONSE_RESULT
 _GETINBOXRESPONSE.fields_by_name['inbox'].message_type = _GETINBOXRESPONSE_CLIENTINBOX
 _GETINBOXRESPONSE_RESULT.containing_type = _GETINBOXRESPONSE
 DESCRIPTOR.message_types_by_name['GetInboxResponse'] = _GETINBOXRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 GetInboxResponse = _reflection.GeneratedProtocolMessageType('GetInboxResponse', (_message.Message,), dict(
 

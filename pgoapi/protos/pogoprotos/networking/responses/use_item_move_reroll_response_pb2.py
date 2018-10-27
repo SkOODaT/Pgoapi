@@ -23,7 +23,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   serialized_pb=_b('\nCpogoprotos/networking/responses/use_item_move_reroll_response.proto\x12\x1fpogoprotos.networking.responses\x1a\"pogoprotos/data/pokemon_data.proto\"\xc1\x02\n\x19UseItemMoveRerollResponse\x12Q\n\x06result\x18\x01 \x01(\x0e\x32\x41.pogoprotos.networking.responses.UseItemMoveRerollResponse.Result\x12\x36\n\x10upgraded_pokemon\x18\x02 \x01(\x0b\x32\x1c.pogoprotos.data.PokemonData\"\x98\x01\n\x06Result\x12\t\n\x05UNSET\x10\x00\x12\x0b\n\x07SUCCESS\x10\x01\x12\x0e\n\nNO_POKEMON\x10\x02\x12\x12\n\x0eNO_OTHER_MOVES\x10\x03\x12\r\n\tNO_PLAYER\x10\x04\x12\x13\n\x0fWRONG_ITEM_TYPE\x10\x05\x12\x19\n\x15ITEM_NOT_IN_INVENTORY\x10\x06\x12\x13\n\x0fINVALID_POKEMON\x10\x07\x62\x06proto3')
   ,
   dependencies=[pogoprotos_dot_data_dot_pokemon__data__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -116,6 +115,7 @@ _USEITEMMOVEREROLLRESPONSE.fields_by_name['result'].enum_type = _USEITEMMOVERERO
 _USEITEMMOVEREROLLRESPONSE.fields_by_name['upgraded_pokemon'].message_type = pogoprotos_dot_data_dot_pokemon__data__pb2._POKEMONDATA
 _USEITEMMOVEREROLLRESPONSE_RESULT.containing_type = _USEITEMMOVEREROLLRESPONSE
 DESCRIPTOR.message_types_by_name['UseItemMoveRerollResponse'] = _USEITEMMOVEREROLLRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 UseItemMoveRerollResponse = _reflection.GeneratedProtocolMessageType('UseItemMoveRerollResponse', (_message.Message,), dict(
   DESCRIPTOR = _USEITEMMOVEREROLLRESPONSE,

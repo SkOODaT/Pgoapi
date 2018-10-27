@@ -21,10 +21,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/networking/requests/messages/use_item_rare_candy_message.proto',
   package='pogoprotos.networking.requests.messages',
   syntax='proto3',
-  serialized_pb=_b('\nIpogoprotos/networking/requests/messages/use_item_rare_candy_message.proto\x12\'pogoprotos.networking.requests.messages\x1a\'pogoprotos/inventory/item/item_id.proto\x1a!pogoprotos/enums/pokemon_id.proto\"~\n\x17UseItemRareCandyMessage\x12\x32\n\x07item_id\x18\x01 \x01(\x0e\x32!.pogoprotos.inventory.item.ItemId\x12/\n\npokemon_id\x18\x02 \x01(\x0e\x32\x1b.pogoprotos.enums.PokemonIdb\x06proto3')
+  serialized_pb=_b('\nIpogoprotos/networking/requests/messages/use_item_rare_candy_message.proto\x12\'pogoprotos.networking.requests.messages\x1a\'pogoprotos/inventory/item/item_id.proto\x1a!pogoprotos/enums/pokemon_id.proto\"\x93\x01\n\x17UseItemRareCandyMessage\x12\x32\n\x07item_id\x18\x01 \x01(\x0e\x32!.pogoprotos.inventory.item.ItemId\x12/\n\npokemon_id\x18\x02 \x01(\x0e\x32\x1b.pogoprotos.enums.PokemonId\x12\x13\n\x0b\x63\x61ndy_count\x18\x03 \x01(\x05\x62\x06proto3')
   ,
   dependencies=[pogoprotos_dot_inventory_dot_item_dot_item__id__pb2.DESCRIPTOR,pogoprotos_dot_enums_dot_pokemon__id__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -50,6 +49,13 @@ _USEITEMRARECANDYMESSAGE = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='candy_count', full_name='pogoprotos.networking.requests.messages.UseItemRareCandyMessage.candy_count', index=2,
+      number=3, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -62,13 +68,14 @@ _USEITEMRARECANDYMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=194,
-  serialized_end=320,
+  serialized_start=195,
+  serialized_end=342,
 )
 
 _USEITEMRARECANDYMESSAGE.fields_by_name['item_id'].enum_type = pogoprotos_dot_inventory_dot_item_dot_item__id__pb2._ITEMID
 _USEITEMRARECANDYMESSAGE.fields_by_name['pokemon_id'].enum_type = pogoprotos_dot_enums_dot_pokemon__id__pb2._POKEMONID
 DESCRIPTOR.message_types_by_name['UseItemRareCandyMessage'] = _USEITEMRARECANDYMESSAGE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 UseItemRareCandyMessage = _reflection.GeneratedProtocolMessageType('UseItemRareCandyMessage', (_message.Message,), dict(
   DESCRIPTOR = _USEITEMRARECANDYMESSAGE,

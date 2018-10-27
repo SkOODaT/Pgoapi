@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\nFpogoprotos/networking/requests/messages/get_raid_details_message.proto\x12\'pogoprotos.networking.requests.messages\"\x84\x01\n\x15GetRaidDetailsMessage\x12\x11\n\traid_seed\x18\x01 \x01(\x03\x12\x0e\n\x06gym_id\x18\x02 \x01(\t\x12\x10\n\x08lobby_id\x18\x03 \x03(\x05\x12\x1a\n\x12player_lat_degrees\x18\x04 \x01(\x01\x12\x1a\n\x12player_lng_degrees\x18\x05 \x01(\x01\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -85,6 +84,7 @@ _GETRAIDDETAILSMESSAGE = _descriptor.Descriptor(
 )
 
 DESCRIPTOR.message_types_by_name['GetRaidDetailsMessage'] = _GETRAIDDETAILSMESSAGE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 GetRaidDetailsMessage = _reflection.GeneratedProtocolMessageType('GetRaidDetailsMessage', (_message.Message,), dict(
   DESCRIPTOR = _GETRAIDDETAILSMESSAGE,

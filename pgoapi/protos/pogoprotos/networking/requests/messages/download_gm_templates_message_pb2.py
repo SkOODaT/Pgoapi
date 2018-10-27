@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\nKpogoprotos/networking/requests/messages/download_gm_templates_message.proto\x12\'pogoprotos.networking.requests.messages\"[\n\x1a\x44ownloadGmTemplatesMessage\x12\x16\n\x0e\x62\x61sis_batch_id\x18\x01 \x01(\x03\x12\x10\n\x08\x62\x61tch_id\x18\x02 \x01(\x03\x12\x13\n\x0bpage_offset\x18\x03 \x01(\x05\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -71,6 +70,7 @@ _DOWNLOADGMTEMPLATESMESSAGE = _descriptor.Descriptor(
 )
 
 DESCRIPTOR.message_types_by_name['DownloadGmTemplatesMessage'] = _DOWNLOADGMTEMPLATESMESSAGE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 DownloadGmTemplatesMessage = _reflection.GeneratedProtocolMessageType('DownloadGmTemplatesMessage', (_message.Message,), dict(
   DESCRIPTOR = _DOWNLOADGMTEMPLATESMESSAGE,

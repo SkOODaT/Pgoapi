@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\nEpogoprotos/networking/responses/mark_read_news_article_response.proto\x12\x1fpogoprotos.networking.responses\"\xa7\x01\n\x1bMarkReadNewsArticleResponse\x12S\n\x06result\x18\x01 \x01(\x0e\x32\x43.pogoprotos.networking.responses.MarkReadNewsArticleResponse.Result\"3\n\x06Result\x12\t\n\x05UNSET\x10\x00\x12\x0b\n\x07SUCCESS\x10\x01\x12\x11\n\rNO_NEWS_FOUND\x10\x02\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -86,6 +85,7 @@ _MARKREADNEWSARTICLERESPONSE = _descriptor.Descriptor(
 _MARKREADNEWSARTICLERESPONSE.fields_by_name['result'].enum_type = _MARKREADNEWSARTICLERESPONSE_RESULT
 _MARKREADNEWSARTICLERESPONSE_RESULT.containing_type = _MARKREADNEWSARTICLERESPONSE
 DESCRIPTOR.message_types_by_name['MarkReadNewsArticleResponse'] = _MARKREADNEWSARTICLERESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 MarkReadNewsArticleResponse = _reflection.GeneratedProtocolMessageType('MarkReadNewsArticleResponse', (_message.Message,), dict(
   DESCRIPTOR = _MARKREADNEWSARTICLERESPONSE,

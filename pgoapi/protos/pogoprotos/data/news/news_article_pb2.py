@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\n\'pogoprotos/data/news/news_article.proto\x12\x14pogoprotos.data.news\"\x9b\x02\n\x0bNewsArticle\x12\n\n\x02id\x18\x01 \x01(\t\x12\x11\n\timage_url\x18\x02 \x03(\t\x12\x12\n\nheader_key\x18\x03 \x01(\t\x12\x15\n\rsubheader_key\x18\x04 \x01(\t\x12\x15\n\rmain_text_key\x18\x05 \x01(\t\x12\x11\n\ttimestamp\x18\x06 \x01(\x03\x12@\n\x08template\x18\x07 \x01(\x0e\x32..pogoprotos.data.news.NewsArticle.NewsTemplate\x12\x0f\n\x07\x65nabled\x18\x08 \x01(\x08\x12\x14\n\x0c\x61rticle_read\x18\t \x01(\x08\"/\n\x0cNewsTemplate\x12\t\n\x05UNSET\x10\x00\x12\x14\n\x10\x44\x45\x46\x41ULT_TEMPLATE\x10\x01\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -138,6 +137,7 @@ _NEWSARTICLE = _descriptor.Descriptor(
 _NEWSARTICLE.fields_by_name['template'].enum_type = _NEWSARTICLE_NEWSTEMPLATE
 _NEWSARTICLE_NEWSTEMPLATE.containing_type = _NEWSARTICLE
 DESCRIPTOR.message_types_by_name['NewsArticle'] = _NEWSARTICLE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 NewsArticle = _reflection.GeneratedProtocolMessageType('NewsArticle', (_message.Message,), dict(
   DESCRIPTOR = _NEWSARTICLE,

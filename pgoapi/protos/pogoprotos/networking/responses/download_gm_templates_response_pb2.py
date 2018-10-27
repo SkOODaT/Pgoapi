@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\nDpogoprotos/networking/responses/download_gm_templates_response.proto\x12\x1fpogoprotos.networking.responses\"\xc3\x03\n\x1b\x44ownloadGmTemplatesResponse\x12S\n\x06result\x18\x01 \x01(\x0e\x32\x43.pogoprotos.networking.responses.DownloadGmTemplatesResponse.Result\x12g\n\x08template\x18\x02 \x03(\x0b\x32U.pogoprotos.networking.responses.DownloadGmTemplatesResponse.ClientGameMasterTemplate\x12\x18\n\x10\x64\x65leted_template\x18\x03 \x03(\t\x12\x10\n\x08\x62\x61tch_id\x18\x04 \x01(\x06\x12\x13\n\x0bpage_offset\x18\x05 \x01(\x05\x1a=\n\x18\x43lientGameMasterTemplate\x12\x13\n\x0btemplate_id\x18\x01 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x02 \x01(\x0c\"f\n\x06Result\x12\t\n\x05UNSET\x10\x00\x12\x0c\n\x08\x43OMPLETE\x10\x01\x12\x10\n\x0cMORE_RESULTS\x10\x02\x12\x15\n\x11\x42\x41TCH_ID_NOT_LIVE\x10\x03\x12\x1a\n\x16INVALID_BASIS_BATCH_ID\x10\x04\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -161,6 +160,7 @@ _DOWNLOADGMTEMPLATESRESPONSE.fields_by_name['result'].enum_type = _DOWNLOADGMTEM
 _DOWNLOADGMTEMPLATESRESPONSE.fields_by_name['template'].message_type = _DOWNLOADGMTEMPLATESRESPONSE_CLIENTGAMEMASTERTEMPLATE
 _DOWNLOADGMTEMPLATESRESPONSE_RESULT.containing_type = _DOWNLOADGMTEMPLATESRESPONSE
 DESCRIPTOR.message_types_by_name['DownloadGmTemplatesResponse'] = _DOWNLOADGMTEMPLATESRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 DownloadGmTemplatesResponse = _reflection.GeneratedProtocolMessageType('DownloadGmTemplatesResponse', (_message.Message,), dict(
 

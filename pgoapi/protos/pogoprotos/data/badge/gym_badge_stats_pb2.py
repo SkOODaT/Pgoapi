@@ -13,15 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
+from pogoprotos.data.gym import gym_battle_pb2 as pogoprotos_dot_data_dot_gym_dot_gym__battle__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/data/badge/gym_badge_stats.proto',
   package='pogoprotos.data.badge',
   syntax='proto3',
-  serialized_pb=_b('\n+pogoprotos/data/badge/gym_badge_stats.proto\x12\x15pogoprotos.data.badge\"\x90\x01\n\rGymBadgeStats\x12\x1e\n\x16total_time_defended_ms\x18\x01 \x01(\x04\x12\x17\n\x0fnum_battles_won\x18\x02 \x01(\r\x12\x18\n\x10num_battles_lost\x18\x05 \x01(\r\x12\x17\n\x0fnum_berries_fed\x18\x03 \x01(\r\x12\x13\n\x0bnum_deploys\x18\x04 \x01(\rb\x06proto3')
-)
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+  serialized_pb=_b('\n+pogoprotos/data/badge/gym_badge_stats.proto\x12\x15pogoprotos.data.badge\x1a$pogoprotos/data/gym/gym_battle.proto\"\xc5\x01\n\rGymBadgeStats\x12\x1e\n\x16total_time_defended_ms\x18\x01 \x01(\x04\x12\x17\n\x0fnum_battles_won\x18\x02 \x01(\r\x12\x18\n\x10num_battles_lost\x18\x05 \x01(\r\x12\x17\n\x0fnum_berries_fed\x18\x03 \x01(\r\x12\x13\n\x0bnum_deploys\x18\x04 \x01(\r\x12\x33\n\x0bgym_battles\x18\x0f \x03(\x0b\x32\x1e.pogoprotos.data.gym.GymBattleb\x06proto3')
+  ,
+  dependencies=[pogoprotos_dot_data_dot_gym_dot_gym__battle__pb2.DESCRIPTOR,])
 
 
 
@@ -68,6 +69,13 @@ _GYMBADGESTATS = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='gym_battles', full_name='pogoprotos.data.badge.GymBadgeStats.gym_battles', index=5,
+      number=15, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -80,11 +88,13 @@ _GYMBADGESTATS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=71,
-  serialized_end=215,
+  serialized_start=109,
+  serialized_end=306,
 )
 
+_GYMBADGESTATS.fields_by_name['gym_battles'].message_type = pogoprotos_dot_data_dot_gym_dot_gym__battle__pb2._GYMBATTLE
 DESCRIPTOR.message_types_by_name['GymBadgeStats'] = _GYMBADGESTATS
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 GymBadgeStats = _reflection.GeneratedProtocolMessageType('GymBadgeStats', (_message.Message,), dict(
   DESCRIPTOR = _GYMBADGESTATS,

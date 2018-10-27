@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\nEpogoprotos/networking/responses/award_free_raid_ticket_response.proto\x12\x1fpogoprotos.networking.responses\"\x8e\x02\n\x1b\x41wardFreeRaidTicketResponse\x12S\n\x06result\x18\x01 \x01(\x0e\x32\x43.pogoprotos.networking.responses.AwardFreeRaidTicketResponse.Result\"\x99\x01\n\x06Result\x12\x11\n\rNO_RESULT_SET\x10\x00\x12\x0b\n\x07SUCCESS\x10\x01\x12(\n$ERROR_PLAYER_DOES_NOT_MEET_MIN_LEVEL\x10\x02\x12&\n\"ERROR_DAILY_TICKET_ALREADY_AWARDED\x10\x03\x12\x1d\n\x19\x45RROR_PLAYER_OUT_OF_RANGE\x10\x04\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -94,6 +93,7 @@ _AWARDFREERAIDTICKETRESPONSE = _descriptor.Descriptor(
 _AWARDFREERAIDTICKETRESPONSE.fields_by_name['result'].enum_type = _AWARDFREERAIDTICKETRESPONSE_RESULT
 _AWARDFREERAIDTICKETRESPONSE_RESULT.containing_type = _AWARDFREERAIDTICKETRESPONSE
 DESCRIPTOR.message_types_by_name['AwardFreeRaidTicketResponse'] = _AWARDFREERAIDTICKETRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 AwardFreeRaidTicketResponse = _reflection.GeneratedProtocolMessageType('AwardFreeRaidTicketResponse', (_message.Message,), dict(
   DESCRIPTOR = _AWARDFREERAIDTICKETRESPONSE,

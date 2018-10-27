@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\n6pogoprotos/settings/master/pokemon_scale_setting.proto\x12\x1apogoprotos.settings.master\"\xa4\x02\n\x13PokemonScaleSetting\x12\\\n\x12pokemon_scale_mode\x18\x01 \x01(\x0e\x32@.pogoprotos.settings.master.PokemonScaleSetting.PokemonScaleMode\x12\x12\n\nmin_height\x18\x02 \x01(\x02\x12\x12\n\nmax_height\x18\x03 \x01(\x02\"\x86\x01\n\x10PokemonScaleMode\x12\x10\n\x0cNaturalScale\x10\x00\x12\x0c\n\x08GuiScale\x10\x01\x12\x16\n\x12\x42\x61ttlePokemonScale\x10\x02\x12\x11\n\rRaidBossScale\x10\x03\x12\x12\n\x0eGymTopperScale\x10\x04\x12\x13\n\x0fMapPokemonScale\x10\x05\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -112,6 +111,7 @@ _POKEMONSCALESETTING = _descriptor.Descriptor(
 _POKEMONSCALESETTING.fields_by_name['pokemon_scale_mode'].enum_type = _POKEMONSCALESETTING_POKEMONSCALEMODE
 _POKEMONSCALESETTING_POKEMONSCALEMODE.containing_type = _POKEMONSCALESETTING
 DESCRIPTOR.message_types_by_name['PokemonScaleSetting'] = _POKEMONSCALESETTING
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 PokemonScaleSetting = _reflection.GeneratedProtocolMessageType('PokemonScaleSetting', (_message.Message,), dict(
   DESCRIPTOR = _POKEMONSCALESETTING,

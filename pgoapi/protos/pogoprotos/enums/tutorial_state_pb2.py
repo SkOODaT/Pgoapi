@@ -20,9 +20,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/enums/tutorial_state.proto',
   package='pogoprotos.enums',
   syntax='proto3',
-  serialized_pb=_b('\n%pogoprotos/enums/tutorial_state.proto\x12\x10pogoprotos.enums*\xe4\x01\n\rTutorialState\x12\x10\n\x0cLEGAL_SCREEN\x10\x00\x12\x14\n\x10\x41VATAR_SELECTION\x10\x01\x12\x14\n\x10\x41\x43\x43OUNT_CREATION\x10\x02\x12\x13\n\x0fPOKEMON_CAPTURE\x10\x03\x12\x12\n\x0eNAME_SELECTION\x10\x04\x12\x11\n\rPOKEMON_BERRY\x10\x05\x12\x0c\n\x08USE_ITEM\x10\x06\x12\"\n\x1e\x46IRST_TIME_EXPERIENCE_COMPLETE\x10\x07\x12\x15\n\x11POKESTOP_TUTORIAL\x10\x08\x12\x10\n\x0cGYM_TUTORIAL\x10\tb\x06proto3')
+  serialized_pb=_b('\n%pogoprotos/enums/tutorial_state.proto\x12\x10pogoprotos.enums*\xdf\x02\n\rTutorialState\x12\x10\n\x0cLEGAL_SCREEN\x10\x00\x12\x14\n\x10\x41VATAR_SELECTION\x10\x01\x12\x14\n\x10\x41\x43\x43OUNT_CREATION\x10\x02\x12\x13\n\x0fPOKEMON_CAPTURE\x10\x03\x12\x12\n\x0eNAME_SELECTION\x10\x04\x12\x11\n\rPOKEMON_BERRY\x10\x05\x12\x15\n\x11USE_ITEM_TUTORIAL\x10\x06\x12\"\n\x1e\x46IRST_TIME_EXPERIENCE_COMPLETE\x10\x07\x12\x15\n\x11POKESTOP_TUTORIAL\x10\x08\x12\x10\n\x0cGYM_TUTORIAL\x10\t\x12\x1c\n\x18\x43HALLENGE_QUEST_TUTORIAL\x10\n\x12\x1f\n\x1bPRIVACY_POLICY_CONFIRMATION\x10\x0b\x12\x14\n\x10TRADING_TUTORIAL\x10\x0c\x12\x1b\n\x17POI_SUBMISSION_TUTORIAL\x10\rb\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _TUTORIALSTATE = _descriptor.EnumDescriptor(
   name='TutorialState',
@@ -55,7 +54,7 @@ _TUTORIALSTATE = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='USE_ITEM', index=6, number=6,
+      name='USE_ITEM_TUTORIAL', index=6, number=6,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -70,11 +69,27 @@ _TUTORIALSTATE = _descriptor.EnumDescriptor(
       name='GYM_TUTORIAL', index=9, number=9,
       options=None,
       type=None),
+    _descriptor.EnumValueDescriptor(
+      name='CHALLENGE_QUEST_TUTORIAL', index=10, number=10,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='PRIVACY_POLICY_CONFIRMATION', index=11, number=11,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='TRADING_TUTORIAL', index=12, number=12,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='POI_SUBMISSION_TUTORIAL', index=13, number=13,
+      options=None,
+      type=None),
   ],
   containing_type=None,
   options=None,
   serialized_start=60,
-  serialized_end=288,
+  serialized_end=411,
 )
 _sym_db.RegisterEnumDescriptor(_TUTORIALSTATE)
 
@@ -85,13 +100,18 @@ ACCOUNT_CREATION = 2
 POKEMON_CAPTURE = 3
 NAME_SELECTION = 4
 POKEMON_BERRY = 5
-USE_ITEM = 6
+USE_ITEM_TUTORIAL = 6
 FIRST_TIME_EXPERIENCE_COMPLETE = 7
 POKESTOP_TUTORIAL = 8
 GYM_TUTORIAL = 9
+CHALLENGE_QUEST_TUTORIAL = 10
+PRIVACY_POLICY_CONFIRMATION = 11
+TRADING_TUTORIAL = 12
+POI_SUBMISSION_TUTORIAL = 13
 
 
 DESCRIPTOR.enum_types_by_name['TutorialState'] = _TUTORIALSTATE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 # @@protoc_insertion_point(module_scope)

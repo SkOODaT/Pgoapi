@@ -23,7 +23,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   serialized_pb=_b('\nFpogoprotos/networking/requests/messages/gym_feed_pokemon_message.proto\x12\'pogoprotos.networking.requests.messages\x1a\'pogoprotos/inventory/item/item_id.proto\"\xbf\x01\n\x15GymFeedPokemonMessage\x12/\n\x04item\x18\x01 \x01(\x0e\x32!.pogoprotos.inventory.item.ItemId\x12\x19\n\x11starting_quantity\x18\x02 \x01(\x05\x12\x0e\n\x06gym_id\x18\x03 \x01(\t\x12\x12\n\npokemon_id\x18\x04 \x01(\x06\x12\x1a\n\x12player_lat_degrees\x18\x05 \x01(\x01\x12\x1a\n\x12player_lng_degrees\x18\x06 \x01(\x01\x62\x06proto3')
   ,
   dependencies=[pogoprotos_dot_inventory_dot_item_dot_item__id__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -95,6 +94,7 @@ _GYMFEEDPOKEMONMESSAGE = _descriptor.Descriptor(
 
 _GYMFEEDPOKEMONMESSAGE.fields_by_name['item'].enum_type = pogoprotos_dot_inventory_dot_item_dot_item__id__pb2._ITEMID
 DESCRIPTOR.message_types_by_name['GymFeedPokemonMessage'] = _GYMFEEDPOKEMONMESSAGE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 GymFeedPokemonMessage = _reflection.GeneratedProtocolMessageType('GymFeedPokemonMessage', (_message.Message,), dict(
   DESCRIPTOR = _GYMFEEDPOKEMONMESSAGE,

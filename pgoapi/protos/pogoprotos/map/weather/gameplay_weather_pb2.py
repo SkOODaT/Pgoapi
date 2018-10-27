@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\n-pogoprotos/map/weather/gameplay_weather.proto\x12\x16pogoprotos.map.weather\"\xda\x01\n\x0fGameplayWeather\x12T\n\x12gameplay_condition\x18\x01 \x01(\x0e\x32\x38.pogoprotos.map.weather.GameplayWeather.WeatherCondition\"q\n\x10WeatherCondition\x12\x08\n\x04NONE\x10\x00\x12\t\n\x05\x43LEAR\x10\x01\x12\t\n\x05RAINY\x10\x02\x12\x11\n\rPARTLY_CLOUDY\x10\x03\x12\x0c\n\x08OVERCAST\x10\x04\x12\t\n\x05WINDY\x10\x05\x12\x08\n\x04SNOW\x10\x06\x12\x07\n\x03\x46OG\x10\x07\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -106,6 +105,7 @@ _GAMEPLAYWEATHER = _descriptor.Descriptor(
 _GAMEPLAYWEATHER.fields_by_name['gameplay_condition'].enum_type = _GAMEPLAYWEATHER_WEATHERCONDITION
 _GAMEPLAYWEATHER_WEATHERCONDITION.containing_type = _GAMEPLAYWEATHER
 DESCRIPTOR.message_types_by_name['GameplayWeather'] = _GAMEPLAYWEATHER
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 GameplayWeather = _reflection.GeneratedProtocolMessageType('GameplayWeather', (_message.Message,), dict(
   DESCRIPTOR = _GAMEPLAYWEATHER,

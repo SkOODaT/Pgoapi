@@ -24,7 +24,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   serialized_pb=_b('\n1pogoprotos/settings/master/weather_affinity.proto\x12\x1apogoprotos.settings.master\x1a#pogoprotos/enums/pokemon_type.proto\x1a(pogoprotos/enums/weather_condition.proto\"\x85\x01\n\x0fWeatherAffinity\x12=\n\x11weather_condition\x18\x01 \x01(\x0e\x32\".pogoprotos.enums.WeatherCondition\x12\x33\n\x0cpokemon_type\x18\x02 \x03(\x0e\x32\x1d.pogoprotos.enums.PokemonTypeb\x06proto3')
   ,
   dependencies=[pogoprotos_dot_enums_dot_pokemon__type__pb2.DESCRIPTOR,pogoprotos_dot_enums_dot_weather__condition__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -69,6 +68,7 @@ _WEATHERAFFINITY = _descriptor.Descriptor(
 _WEATHERAFFINITY.fields_by_name['weather_condition'].enum_type = pogoprotos_dot_enums_dot_weather__condition__pb2._WEATHERCONDITION
 _WEATHERAFFINITY.fields_by_name['pokemon_type'].enum_type = pogoprotos_dot_enums_dot_pokemon__type__pb2._POKEMONTYPE
 DESCRIPTOR.message_types_by_name['WeatherAffinity'] = _WEATHERAFFINITY
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 WeatherAffinity = _reflection.GeneratedProtocolMessageType('WeatherAffinity', (_message.Message,), dict(
   DESCRIPTOR = _WEATHERAFFINITY,

@@ -19,9 +19,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/data/player/currency.proto',
   package='pogoprotos.data.player',
   syntax='proto3',
-  serialized_pb=_b('\n%pogoprotos/data/player/currency.proto\x12\x16pogoprotos.data.player\"(\n\x08\x43urrency\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0e\n\x06\x61mount\x18\x02 \x01(\x05\x62\x06proto3')
+  serialized_pb=_b('\n%pogoprotos/data/player/currency.proto\x12\x16pogoprotos.data.player\"\x8f\x01\n\x08\x43urrency\x12\x15\n\rcurrency_type\x18\x01 \x01(\t\x12\x10\n\x08quantity\x18\x02 \x01(\x05\x12\x1f\n\x17\x66iat_purchased_quantity\x18\x03 \x01(\x05\x12\x1a\n\x12\x66iat_currency_type\x18\x04 \x01(\t\x12\x1d\n\x15\x66iat_currency_cost_e6\x18\x05 \x01(\x03\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -34,15 +33,36 @@ _CURRENCY = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='name', full_name='pogoprotos.data.player.Currency.name', index=0,
+      name='currency_type', full_name='pogoprotos.data.player.Currency.currency_type', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='amount', full_name='pogoprotos.data.player.Currency.amount', index=1,
+      name='quantity', full_name='pogoprotos.data.player.Currency.quantity', index=1,
       number=2, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='fiat_purchased_quantity', full_name='pogoprotos.data.player.Currency.fiat_purchased_quantity', index=2,
+      number=3, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='fiat_currency_type', full_name='pogoprotos.data.player.Currency.fiat_currency_type', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='fiat_currency_cost_e6', full_name='pogoprotos.data.player.Currency.fiat_currency_cost_e6', index=4,
+      number=5, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -59,11 +79,12 @@ _CURRENCY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=65,
-  serialized_end=105,
+  serialized_start=66,
+  serialized_end=209,
 )
 
 DESCRIPTOR.message_types_by_name['Currency'] = _CURRENCY
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Currency = _reflection.GeneratedProtocolMessageType('Currency', (_message.Message,), dict(
   DESCRIPTOR = _CURRENCY,

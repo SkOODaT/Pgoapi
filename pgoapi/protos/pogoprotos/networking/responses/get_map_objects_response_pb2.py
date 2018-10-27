@@ -25,7 +25,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   serialized_pb=_b('\n>pogoprotos/networking/responses/get_map_objects_response.proto\x12\x1fpogoprotos.networking.responses\x1a\x1dpogoprotos/map/map_cell.proto\x1a\'pogoprotos/map/map_objects_status.proto\x1a+pogoprotos/map/weather/client_weather.proto\"\xb6\x02\n\x15GetMapObjectsResponse\x12*\n\tmap_cells\x18\x01 \x03(\x0b\x32\x17.pogoprotos.map.MapCell\x12\x30\n\x06status\x18\x02 \x01(\x0e\x32 .pogoprotos.map.MapObjectsStatus\x12U\n\x0btime_of_day\x18\x03 \x01(\x0e\x32@.pogoprotos.networking.responses.GetMapObjectsResponse.TimeOfDay\x12=\n\x0e\x63lient_weather\x18\x04 \x03(\x0b\x32%.pogoprotos.map.weather.ClientWeather\")\n\tTimeOfDay\x12\x08\n\x04NONE\x10\x00\x12\x07\n\x03\x44\x41Y\x10\x01\x12\t\n\x05NIGHT\x10\x02\x62\x06proto3')
   ,
   dependencies=[pogoprotos_dot_map_dot_map__cell__pb2.DESCRIPTOR,pogoprotos_dot_map_dot_map__objects__status__pb2.DESCRIPTOR,pogoprotos_dot_map_dot_weather_dot_client__weather__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -114,6 +113,7 @@ _GETMAPOBJECTSRESPONSE.fields_by_name['time_of_day'].enum_type = _GETMAPOBJECTSR
 _GETMAPOBJECTSRESPONSE.fields_by_name['client_weather'].message_type = pogoprotos_dot_map_dot_weather_dot_client__weather__pb2._CLIENTWEATHER
 _GETMAPOBJECTSRESPONSE_TIMEOFDAY.containing_type = _GETMAPOBJECTSRESPONSE
 DESCRIPTOR.message_types_by_name['GetMapObjectsResponse'] = _GETMAPOBJECTSRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 GetMapObjectsResponse = _reflection.GeneratedProtocolMessageType('GetMapObjectsResponse', (_message.Message,), dict(
   DESCRIPTOR = _GETMAPOBJECTSRESPONSE,

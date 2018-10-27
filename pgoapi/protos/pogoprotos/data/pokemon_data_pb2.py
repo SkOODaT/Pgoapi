@@ -23,10 +23,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/data/pokemon_data.proto',
   package='pogoprotos.data',
   syntax='proto3',
-  serialized_pb=_b('\n\"pogoprotos/data/pokemon_data.proto\x12\x0fpogoprotos.data\x1a%pogoprotos/data/pokemon_display.proto\x1a!pogoprotos/enums/pokemon_id.proto\x1a#pogoprotos/enums/pokemon_move.proto\x1a\'pogoprotos/inventory/item/item_id.proto\"\xc6\x08\n\x0bPokemonData\x12\n\n\x02id\x18\x01 \x01(\x06\x12/\n\npokemon_id\x18\x02 \x01(\x0e\x32\x1b.pogoprotos.enums.PokemonId\x12\n\n\x02\x63p\x18\x03 \x01(\x05\x12\x0f\n\x07stamina\x18\x04 \x01(\x05\x12\x13\n\x0bstamina_max\x18\x05 \x01(\x05\x12-\n\x06move_1\x18\x06 \x01(\x0e\x32\x1d.pogoprotos.enums.PokemonMove\x12-\n\x06move_2\x18\x07 \x01(\x0e\x32\x1d.pogoprotos.enums.PokemonMove\x12\x18\n\x10\x64\x65ployed_fort_id\x18\x08 \x01(\t\x12\x12\n\nowner_name\x18\t \x01(\t\x12\x0e\n\x06is_egg\x18\n \x01(\x08\x12\x1c\n\x14\x65gg_km_walked_target\x18\x0b \x01(\x01\x12\x1b\n\x13\x65gg_km_walked_start\x18\x0c \x01(\x01\x12\x0e\n\x06origin\x18\x0e \x01(\x05\x12\x10\n\x08height_m\x18\x0f \x01(\x02\x12\x11\n\tweight_kg\x18\x10 \x01(\x02\x12\x19\n\x11individual_attack\x18\x11 \x01(\x05\x12\x1a\n\x12individual_defense\x18\x12 \x01(\x05\x12\x1a\n\x12individual_stamina\x18\x13 \x01(\x05\x12\x15\n\rcp_multiplier\x18\x14 \x01(\x02\x12\x33\n\x08pokeball\x18\x15 \x01(\x0e\x32!.pogoprotos.inventory.item.ItemId\x12\x18\n\x10\x63\x61ptured_cell_id\x18\x16 \x01(\x04\x12\x18\n\x10\x62\x61ttles_attacked\x18\x17 \x01(\x05\x12\x18\n\x10\x62\x61ttles_defended\x18\x18 \x01(\x05\x12\x18\n\x10\x65gg_incubator_id\x18\x19 \x01(\t\x12\x18\n\x10\x63reation_time_ms\x18\x1a \x01(\x04\x12\x14\n\x0cnum_upgrades\x18\x1b \x01(\x05\x12 \n\x18\x61\x64\x64itional_cp_multiplier\x18\x1c \x01(\x02\x12\x10\n\x08\x66\x61vorite\x18\x1d \x01(\x05\x12\x10\n\x08nickname\x18\x1e \x01(\t\x12\x11\n\tfrom_fort\x18\x1f \x01(\x05\x12\x1b\n\x13\x62uddy_candy_awarded\x18  \x01(\x05\x12\x1d\n\x15\x62uddy_total_km_walked\x18! \x01(\x02\x12\x1a\n\x12\x64isplay_pokemon_id\x18\" \x01(\x05\x12\x12\n\ndisplay_cp\x18# \x01(\x05\x12\x38\n\x0fpokemon_display\x18$ \x01(\x0b\x32\x1f.pogoprotos.data.PokemonDisplay\x12\x0e\n\x06is_bad\x18% \x01(\x08\x12\x18\n\x10hatched_from_egg\x18& \x01(\x08\x12\x16\n\x0e\x63oins_returned\x18\' \x01(\x05\x12\x1c\n\x14\x64\x65ployed_duration_ms\x18( \x01(\x03\x12&\n\x1e\x64\x65ployed_returned_timestamp_ms\x18) \x01(\x03\x62\x06proto3')
+  serialized_pb=_b('\n\"pogoprotos/data/pokemon_data.proto\x12\x0fpogoprotos.data\x1a%pogoprotos/data/pokemon_display.proto\x1a!pogoprotos/enums/pokemon_id.proto\x1a#pogoprotos/enums/pokemon_move.proto\x1a\'pogoprotos/inventory/item/item_id.proto\"\xdc\t\n\x0bPokemonData\x12\n\n\x02id\x18\x01 \x01(\x06\x12/\n\npokemon_id\x18\x02 \x01(\x0e\x32\x1b.pogoprotos.enums.PokemonId\x12\n\n\x02\x63p\x18\x03 \x01(\x05\x12\x0f\n\x07stamina\x18\x04 \x01(\x05\x12\x13\n\x0bstamina_max\x18\x05 \x01(\x05\x12-\n\x06move_1\x18\x06 \x01(\x0e\x32\x1d.pogoprotos.enums.PokemonMove\x12-\n\x06move_2\x18\x07 \x01(\x0e\x32\x1d.pogoprotos.enums.PokemonMove\x12\x18\n\x10\x64\x65ployed_fort_id\x18\x08 \x01(\t\x12\x12\n\nowner_name\x18\t \x01(\t\x12\x0e\n\x06is_egg\x18\n \x01(\x08\x12\x1c\n\x14\x65gg_km_walked_target\x18\x0b \x01(\x01\x12\x1b\n\x13\x65gg_km_walked_start\x18\x0c \x01(\x01\x12\x0e\n\x06origin\x18\x0e \x01(\x05\x12\x10\n\x08height_m\x18\x0f \x01(\x02\x12\x11\n\tweight_kg\x18\x10 \x01(\x02\x12\x19\n\x11individual_attack\x18\x11 \x01(\x05\x12\x1a\n\x12individual_defense\x18\x12 \x01(\x05\x12\x1a\n\x12individual_stamina\x18\x13 \x01(\x05\x12\x15\n\rcp_multiplier\x18\x14 \x01(\x02\x12\x33\n\x08pokeball\x18\x15 \x01(\x0e\x32!.pogoprotos.inventory.item.ItemId\x12\x18\n\x10\x63\x61ptured_cell_id\x18\x16 \x01(\x04\x12\x18\n\x10\x62\x61ttles_attacked\x18\x17 \x01(\x05\x12\x18\n\x10\x62\x61ttles_defended\x18\x18 \x01(\x05\x12\x18\n\x10\x65gg_incubator_id\x18\x19 \x01(\t\x12\x18\n\x10\x63reation_time_ms\x18\x1a \x01(\x04\x12\x14\n\x0cnum_upgrades\x18\x1b \x01(\x05\x12 \n\x18\x61\x64\x64itional_cp_multiplier\x18\x1c \x01(\x02\x12\x10\n\x08\x66\x61vorite\x18\x1d \x01(\x05\x12\x10\n\x08nickname\x18\x1e \x01(\t\x12\x11\n\tfrom_fort\x18\x1f \x01(\x05\x12\x1b\n\x13\x62uddy_candy_awarded\x18  \x01(\x05\x12\x1d\n\x15\x62uddy_total_km_walked\x18! \x01(\x02\x12\x1a\n\x12\x64isplay_pokemon_id\x18\" \x01(\x05\x12\x12\n\ndisplay_cp\x18# \x01(\x05\x12\x38\n\x0fpokemon_display\x18$ \x01(\x0b\x32\x1f.pogoprotos.data.PokemonDisplay\x12\x0e\n\x06is_bad\x18% \x01(\x08\x12\x18\n\x10hatched_from_egg\x18& \x01(\x08\x12\x16\n\x0e\x63oins_returned\x18\' \x01(\x05\x12\x1c\n\x14\x64\x65ployed_duration_ms\x18( \x01(\x03\x12&\n\x1e\x64\x65ployed_returned_timestamp_ms\x18) \x01(\x03\x12$\n\x1c\x63p_multiplier_before_trading\x18* \x01(\x02\x12#\n\x1btrading_original_owner_hash\x18+ \x01(\x05\x12\x1f\n\x17original_owner_nickname\x18, \x01(\t\x12\x16\n\x0etraded_time_ms\x18- \x01(\x03\x12\x10\n\x08is_lucky\x18. \x01(\x08\x62\x06proto3')
   ,
   dependencies=[pogoprotos_dot_data_dot_pokemon__display__pb2.DESCRIPTOR,pogoprotos_dot_enums_dot_pokemon__id__pb2.DESCRIPTOR,pogoprotos_dot_enums_dot_pokemon__move__pb2.DESCRIPTOR,pogoprotos_dot_inventory_dot_item_dot_item__id__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -318,6 +317,41 @@ _POKEMONDATA = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='cp_multiplier_before_trading', full_name='pogoprotos.data.PokemonData.cp_multiplier_before_trading', index=40,
+      number=42, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='trading_original_owner_hash', full_name='pogoprotos.data.PokemonData.trading_original_owner_hash', index=41,
+      number=43, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='original_owner_nickname', full_name='pogoprotos.data.PokemonData.original_owner_nickname', index=42,
+      number=44, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='traded_time_ms', full_name='pogoprotos.data.PokemonData.traded_time_ms', index=43,
+      number=45, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='is_lucky', full_name='pogoprotos.data.PokemonData.is_lucky', index=44,
+      number=46, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -331,7 +365,7 @@ _POKEMONDATA = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=208,
-  serialized_end=1302,
+  serialized_end=1452,
 )
 
 _POKEMONDATA.fields_by_name['pokemon_id'].enum_type = pogoprotos_dot_enums_dot_pokemon__id__pb2._POKEMONID
@@ -340,6 +374,7 @@ _POKEMONDATA.fields_by_name['move_2'].enum_type = pogoprotos_dot_enums_dot_pokem
 _POKEMONDATA.fields_by_name['pokeball'].enum_type = pogoprotos_dot_inventory_dot_item_dot_item__id__pb2._ITEMID
 _POKEMONDATA.fields_by_name['pokemon_display'].message_type = pogoprotos_dot_data_dot_pokemon__display__pb2._POKEMONDISPLAY
 DESCRIPTOR.message_types_by_name['PokemonData'] = _POKEMONDATA
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 PokemonData = _reflection.GeneratedProtocolMessageType('PokemonData', (_message.Message,), dict(
   DESCRIPTOR = _POKEMONDATA,

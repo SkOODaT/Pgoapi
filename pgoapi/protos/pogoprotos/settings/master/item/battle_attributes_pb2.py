@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\n7pogoprotos/settings/master/item/battle_attributes.proto\x12\x1fpogoprotos.settings.master.item\"e\n\x10\x42\x61ttleAttributes\x12\x13\n\x0bsta_percent\x18\x01 \x01(\x02\x12\x13\n\x0b\x61tk_percent\x18\x02 \x01(\x02\x12\x13\n\x0b\x64\x65\x66_percent\x18\x03 \x01(\x02\x12\x12\n\nduration_s\x18\x04 \x01(\x02\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -78,6 +77,7 @@ _BATTLEATTRIBUTES = _descriptor.Descriptor(
 )
 
 DESCRIPTOR.message_types_by_name['BattleAttributes'] = _BATTLEATTRIBUTES
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 BattleAttributes = _reflection.GeneratedProtocolMessageType('BattleAttributes', (_message.Message,), dict(
   DESCRIPTOR = _BATTLEATTRIBUTES,

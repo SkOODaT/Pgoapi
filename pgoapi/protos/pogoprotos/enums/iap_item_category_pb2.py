@@ -20,9 +20,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/enums/iap_item_category.proto',
   package='pogoprotos.enums',
   syntax='proto3',
-  serialized_pb=_b('\n(pogoprotos/enums/iap_item_category.proto\x12\x10pogoprotos.enums*\xad\x01\n\x13HoloIapItemCategory\x12\x15\n\x11IAP_CATEGORY_NONE\x10\x00\x12\x17\n\x13IAP_CATEGORY_BUNDLE\x10\x01\x12\x16\n\x12IAP_CATEGORY_ITEMS\x10\x02\x12\x19\n\x15IAP_CATEGORY_UPGRADES\x10\x03\x12\x1a\n\x16IAP_CATEGORY_POKECOINS\x10\x04\x12\x17\n\x13IAP_CATEGORY_AVATAR\x10\x05\x62\x06proto3')
+  serialized_pb=_b('\n(pogoprotos/enums/iap_item_category.proto\x12\x10pogoprotos.enums*\xd1\x01\n\x13HoloIapItemCategory\x12\x15\n\x11IAP_CATEGORY_NONE\x10\x00\x12\x17\n\x13IAP_CATEGORY_BUNDLE\x10\x01\x12\x16\n\x12IAP_CATEGORY_ITEMS\x10\x02\x12\x19\n\x15IAP_CATEGORY_UPGRADES\x10\x03\x12\x1a\n\x16IAP_CATEGORY_POKECOINS\x10\x04\x12\x17\n\x13IAP_CATEGORY_AVATAR\x10\x05\x12\"\n\x1eIAP_CATEGORY_AVATAR_STORE_LINK\x10\x06\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _HOLOIAPITEMCATEGORY = _descriptor.EnumDescriptor(
   name='HoloIapItemCategory',
@@ -54,11 +53,15 @@ _HOLOIAPITEMCATEGORY = _descriptor.EnumDescriptor(
       name='IAP_CATEGORY_AVATAR', index=5, number=5,
       options=None,
       type=None),
+    _descriptor.EnumValueDescriptor(
+      name='IAP_CATEGORY_AVATAR_STORE_LINK', index=6, number=6,
+      options=None,
+      type=None),
   ],
   containing_type=None,
   options=None,
   serialized_start=63,
-  serialized_end=236,
+  serialized_end=272,
 )
 _sym_db.RegisterEnumDescriptor(_HOLOIAPITEMCATEGORY)
 
@@ -69,9 +72,11 @@ IAP_CATEGORY_ITEMS = 2
 IAP_CATEGORY_UPGRADES = 3
 IAP_CATEGORY_POKECOINS = 4
 IAP_CATEGORY_AVATAR = 5
+IAP_CATEGORY_AVATAR_STORE_LINK = 6
 
 
 DESCRIPTOR.enum_types_by_name['HoloIapItemCategory'] = _HOLOIAPITEMCATEGORY
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 # @@protoc_insertion_point(module_scope)

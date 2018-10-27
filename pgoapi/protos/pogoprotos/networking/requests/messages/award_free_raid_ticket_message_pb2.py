@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\nLpogoprotos/networking/requests/messages/award_free_raid_ticket_message.proto\x12\'pogoprotos.networking.requests.messages\"d\n\x1a\x41wardFreeRaidTicketMessage\x12\x0e\n\x06gym_id\x18\x01 \x01(\t\x12\x1a\n\x12player_lat_degrees\x18\x02 \x01(\x01\x12\x1a\n\x12player_lng_degrees\x18\x03 \x01(\x01\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -71,6 +70,7 @@ _AWARDFREERAIDTICKETMESSAGE = _descriptor.Descriptor(
 )
 
 DESCRIPTOR.message_types_by_name['AwardFreeRaidTicketMessage'] = _AWARDFREERAIDTICKETMESSAGE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 AwardFreeRaidTicketMessage = _reflection.GeneratedProtocolMessageType('AwardFreeRaidTicketMessage', (_message.Message,), dict(
   DESCRIPTOR = _AWARDFREERAIDTICKETMESSAGE,

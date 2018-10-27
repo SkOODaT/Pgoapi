@@ -25,7 +25,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   serialized_pb=_b('\n?pogoprotos/networking/responses/get_raid_details_response.proto\x12\x1fpogoprotos.networking.responses\x1a pogoprotos/data/raid/lobby.proto\x1a#pogoprotos/data/battle/battle.proto\x1a$pogoprotos/data/raid/raid_info.proto\"\xe7\x04\n\x16GetRaidDetailsResponse\x12*\n\x05lobby\x18\x01 \x01(\x0b\x32\x1b.pogoprotos.data.raid.Lobby\x12\x33\n\x0braid_battle\x18\x02 \x01(\x0b\x32\x1e.pogoprotos.data.battle.Battle\x12\x1d\n\x15player_can_join_lobby\x18\x03 \x01(\x08\x12N\n\x06result\x18\x04 \x01(\x0e\x32>.pogoprotos.networking.responses.GetRaidDetailsResponse.Result\x12\x31\n\traid_info\x18\x05 \x01(\x0b\x32\x1e.pogoprotos.data.raid.RaidInfo\x12\x13\n\x0bticket_used\x18\x06 \x01(\x08\x12\x1d\n\x15\x66ree_ticket_available\x18\x07 \x01(\x08\x12\x18\n\x10throws_remaining\x18\x08 \x01(\x05\x12\x18\n\x10received_rewards\x18\t \x01(\x08\x12\x1c\n\x14num_players_in_lobby\x18\n \x01(\x05\x12\x11\n\tserver_ms\x18\x0b \x01(\x03\"\xb0\x01\n\x06Result\x12\t\n\x05UNSET\x10\x00\x12\x0b\n\x07SUCCESS\x10\x01\x12\x16\n\x12\x45RROR_NOT_IN_RANGE\x10\x02\x12\x18\n\x14\x45RROR_RAID_COMPLETED\x10\x03\x12\x1a\n\x16\x45RROR_RAID_UNAVAILABLE\x10\x04\x12$\n ERROR_PLAYER_BELOW_MINIMUM_LEVEL\x10\x05\x12\x1a\n\x16\x45RROR_POI_INACCESSIBLE\x10\x06\x62\x06proto3')
   ,
   dependencies=[pogoprotos_dot_data_dot_raid_dot_lobby__pb2.DESCRIPTOR,pogoprotos_dot_data_dot_battle_dot_battle__pb2.DESCRIPTOR,pogoprotos_dot_data_dot_raid_dot_raid__info__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -179,6 +178,7 @@ _GETRAIDDETAILSRESPONSE.fields_by_name['result'].enum_type = _GETRAIDDETAILSRESP
 _GETRAIDDETAILSRESPONSE.fields_by_name['raid_info'].message_type = pogoprotos_dot_data_dot_raid_dot_raid__info__pb2._RAIDINFO
 _GETRAIDDETAILSRESPONSE_RESULT.containing_type = _GETRAIDDETAILSRESPONSE
 DESCRIPTOR.message_types_by_name['GetRaidDetailsResponse'] = _GETRAIDDETAILSRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 GetRaidDetailsResponse = _reflection.GeneratedProtocolMessageType('GetRaidDetailsResponse', (_message.Message,), dict(
   DESCRIPTOR = _GETRAIDDETAILSRESPONSE,

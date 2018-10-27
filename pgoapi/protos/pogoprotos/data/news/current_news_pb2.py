@@ -23,7 +23,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   serialized_pb=_b('\n\'pogoprotos/data/news/current_news.proto\x12\x14pogoprotos.data.news\x1a\'pogoprotos/data/news/news_article.proto\"\x81\x01\n\x0b\x43urrentNews\x12\x38\n\rnews_articles\x18\x01 \x03(\x0b\x32!.pogoprotos.data.news.NewsArticle\x12\x18\n\x10news_strings_url\x18\x02 \x01(\t\x12\x1e\n\x16last_updated_timestamp\x18\x03 \x01(\x03\x62\x06proto3')
   ,
   dependencies=[pogoprotos_dot_data_dot_news_dot_news__article__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -74,6 +73,7 @@ _CURRENTNEWS = _descriptor.Descriptor(
 
 _CURRENTNEWS.fields_by_name['news_articles'].message_type = pogoprotos_dot_data_dot_news_dot_news__article__pb2._NEWSARTICLE
 DESCRIPTOR.message_types_by_name['CurrentNews'] = _CURRENTNEWS
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 CurrentNews = _reflection.GeneratedProtocolMessageType('CurrentNews', (_message.Message,), dict(
   DESCRIPTOR = _CURRENTNEWS,

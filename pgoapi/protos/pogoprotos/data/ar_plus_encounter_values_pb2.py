@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\n.pogoprotos/data/ar_plus_encounter_values.proto\x12\x0fpogoprotos.data\"Y\n\x15\x41RPlusEncounterValues\x12\x11\n\tproximity\x18\x01 \x01(\x02\x12\x11\n\tawareness\x18\x02 \x01(\x02\x12\x1a\n\x12pokemon_frightened\x18\x03 \x01(\x08\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -71,6 +70,7 @@ _ARPLUSENCOUNTERVALUES = _descriptor.Descriptor(
 )
 
 DESCRIPTOR.message_types_by_name['ARPlusEncounterValues'] = _ARPLUSENCOUNTERVALUES
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 ARPlusEncounterValues = _reflection.GeneratedProtocolMessageType('ARPlusEncounterValues', (_message.Message,), dict(
   DESCRIPTOR = _ARPLUSENCOUNTERVALUES,

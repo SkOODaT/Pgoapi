@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\n%pogoprotos/data/raid/event_info.proto\x12\x14pogoprotos.data.raid\"B\n\tEventInfo\x12\x11\n\timage_url\x18\x01 \x01(\t\x12\x10\n\x08icon_url\x18\x02 \x01(\t\x12\x10\n\x08name_key\x18\x03 \x01(\tb\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -71,6 +70,7 @@ _EVENTINFO = _descriptor.Descriptor(
 )
 
 DESCRIPTOR.message_types_by_name['EventInfo'] = _EVENTINFO
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 EventInfo = _reflection.GeneratedProtocolMessageType('EventInfo', (_message.Message,), dict(
   DESCRIPTOR = _EVENTINFO,
